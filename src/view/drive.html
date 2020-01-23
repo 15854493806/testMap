@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>城市</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            color: #000000;
+        }
+        header {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #cccccc;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            width: 20px;
+            height: 20px;
+        }
+        header div {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        header p {
+            font-size: 18px;
+            text-align: center;
+        }
+        .list {
+            margin-top: 10px;
+        }
+
+        .list .item {
+            display: flex;
+            justify-content: start;
+            padding: 8px;
+            background: skyblue;
+            border-bottom: 1px solid #000;
+            margin-bottom: 10px;
+        }
+        .list .item .left {
+
+        }
+
+        .list .item .left img {
+            width: 70px;
+            height: 70px;
+            vertical-align: middle;
+        }
+        .list .item .content {
+
+        }
+        .list .item .content p{
+        }
+
+        .list .item .content .over{
+            /*display: none;*/
+
+        }
+        .list .item .content .over p {
+            margin-bottom: 7px;
+        }
+
+        .list .item .content .load{
+            display: none;
+
+        }
+        .list .item .content .load {
+            vertical-align: middle;
+        }
+        .list .item .content .load p{
+            margin-bottom: 5px;
+        }
+        .list .item .content .load span {
+            margin-right: 7px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .list .item .content .load input{
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+        }
+        .list .item .right p{
+            margin-bottom: 7px;
+        }
+        .list .item .right .save {
+            display: none;
+        }
+        .list .item .right img {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <header>
+        <img src="../image/back.png" alt="" onclick="back()">
+        <div>
+            <p>城市</p>
+        </div>
+    </header>
+    <div class="list">
+    </div>
+
+</div>
+</body>
+
+</html>
+<script src="../js/jquery.min.js"></script>
+
+<script>
+    var list = $('.list');
+    // 初始化
+    $(function () {
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: 'http://www.mangtuyou.com/index/index/getcity',
+            data: {},
+            success: function (data) {
+                console.log("data",data);
+                data.data.forEach(v =>　{
+                    list.append(` <div class="item">
+            <p>${v.city}</p>
+        </div>`)
+                })
+            },
+            error:function (err) {
+                console.log("这是请求失败的");
+            }
+        });
+    })
+
+    // 返回上一页
+    function back() {
+        window.history.back();
+    }
+
+</script>

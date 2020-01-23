@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta content="" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>基本地图展示</title>
+    <!-- 地图的css及js，不可缺少-->
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css" />
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main.css?v=1.0" />
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script type="text/javascript"
+            src="http://webapi.amap.com/maps?v=1.3&key=abe8a72fa068daa443d0a302b784bba7&plugin=AMap.DistrictSearch"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <!-- 弹出信息框样式-->
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #container {
+            height: 78% !important;
+            position: relative;
+        }
+
+        .tab {
+            position: fixed;
+            bottom: 0;
+            background: skyblue;
+            z-index: 9999;
+            width: 100%;
+        }
+
+        .tab .tab_input {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .tab .tab_input input {
+            width: 95%;
+            height: 35px;
+            background: rgb(236, 241, 244);
+            border-radius: 5px;
+            margin: 0 auto;
+            border: 1px solid #cccccc;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .tab .tab_imgAll {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 10px;
+            margin-top: 7px;
+        }
+
+        .tab .tab_imgAll img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .tab .tab_imgAll p {
+            text-align: center;
+            font-size: 14px;
+        }
+        .tab_imgItem {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="mapInit()">
+    <div id="container">
+    </div>
+<!-- 底部选项 -->
+<div class="tab">
+    <div class="tab_input">
+        <input type="text" placeholder="请输入" />
+    </div>
+    <div class="tab_imgAll">
+        <div class="tab_imgItem" onclick="goToItem(0)">
+            <img src="../image/biyou.png" alt />
+            <p>城市</p>
+        </div>
+        <div class="tab_imgItem" onclick="goToItem(2)">
+            <img src="../image/biyou.png" alt />
+            <p>markList</p>
+        </div>
+        <div class="tab_imgItem" onclick="goToItem(2)">
+            <img src="../image/biyou.png" alt />
+            <p>图层显示</p>
+        </div>
+        <div class="tab_imgItem" onclick="goToItem(1)">
+            <img src="../image/biyou.png" alt />
+            <p>mark</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery.min.js"></script>
+
+<script type="text/javascript">
+    //  跳转路由
+    function goToItem(type) {
+        switch (type) {
+            case 0:
+                window.location.href = 'drive.html'
+                break
+            case 1:
+                window.location.href = 'mark.html'
+                break
+            case 2:
+                window.location.href = 'mark.html'
+                break
+        }
+    }
+</script>
+
+<script type="text/javascript">
+
+    //添加Marker
+    function AddMarkerBtn() {
+        //获取经纬度
+        var lnglat = document.getElementById("lnglat").value;
+        //获取站点名
+        var siteName = document.getElementById("siteName").value;
+        //获取站点负责人
+        var WorkerName = document.getElementById("WorkerName").value;
+        //获取详细地址
+        var DeiliteAddress = document.getElementById("tipinput").value;
+        //定义经度
+        var lng = "";
+        //定义纬度
+        var lat = "";
+        //给经度赋值 从0开始到，结束
+        lng = lnglat.substr(0, lnglat.indexOf(","));
+        //给纬度赋值   从，后一位开始到数组的总长结束
+        lat = lnglat.substr(lnglat.indexOf(",") + 1, lnglat.length - 1);
+
+        if (lnglat == "" || lnglat == null) {
+            alert("请单击地图获取坐标或输入相应地址或取坐标后重试！");
+        } else {
+            if (WorkerName != "" && siteName != "") {
+                window.external.addMarker(siteName, WorkerName, lng, lat, DeiliteAddress); //getDebugPath()为c#方法
+            } else {
+                alert("请填写相关数据！");
+            }
+        }
+
+    }
+    //获取单击的点的经纬度
+    function clearMarker(e) {
+
+        //获取到单击的点坐标
+        var lat = e.target.getPosition();
+        //把坐标存入全局变量
+        getlnglatPoint = lat;
+
+    }
+
+    //刷新页面
+    function updateMarker() {
+        window.external.FindUserMobilephone();
+    }
+
+    //全局变量，存储经纬度
+    var getlnglatPoint = "";
+
+
+    //获取参数说明， 定义一个变量，调用GetQueryString("传入参数名");方法即可，返回的是一个数组
+
+    //------------------------------------------------------------------------------------------------接收参数
+    //将字符转换为数组的方法,去除分割标志
+    function string2Array(stringObj) {
+        stringObj = stringObj.replace(/\[([\w, ]*)\]/, "$1");
+        if (stringObj.indexOf("[") == 0) {// if has chinese
+            stringObj = stringObj.substring(1, stringObj.length - 1);
+        }
+        var arr = stringObj.split("p");    //------------     !!!!!!!!!!!!注意：分割标志p
+        var newArray = []; //new Array();
+        for (var i = 0; i < arr.length; i++) {
+            var arrOne = arr[i];
+            newArray.push(arrOne);
+        }
+        // console.log(newArray);
+        return newArray;
+    };
+
+    //  创建一个地图
+    var map = new AMap.Map('container', {
+        resizeEnable: false,              //是否监控地图容器尺寸变化，默认值为false
+        zoom: 13,                        //初始化大小，从国到街为3-18
+        center: [126.48, 46.83]   //初始化中心点，传入经纬度
+    });
+
+    //定义需要的地图控件，类似于实例化一个对象
+    AMap.plugin(['AMap.ToolBar', 'AMap.Scale', 'AMap.MapType', 'AMap.Geolocation'],
+        //添加地图控件 若不需要，可直接删除代码
+        function () {
+            //集成了缩放、平移、定位等功能按钮在内的组合控件  界面操作集成(鼠标右键双击缩小，鼠标左键双击放大，移动，鼠标滑轮缩放)
+            map.addControl(new AMap.ToolBar());
+
+            //展示地图在当前层级和纬度下的比例尺 左下
+            map.addControl(new AMap.Scale());
+
+
+            //实现默认图层与卫星图、实施交通图层之间切换的控 右上
+            //map.addControl(new AMap.MapType());
+
+            //用来获取和展示用户主机所在的经纬度位置 左下
+            map.addControl(new AMap.Geolocation());
+        });
+    // ----------------------------------点击地图出信息窗口 begin
+    var lnglats = [
+        [116.368904, 39.923423],
+        [116.382122, 39.921176],
+        [116.387271, 39.922501],
+        [116.398258, 39.914600]
+    ];
+    var infoWindow = new AMap.InfoWindow({offset: new AMap.Pixel(0, -30)});
+    for (var i = 0, marker; i < lnglats.length; i++) {
+        var marker = new AMap.Marker({
+            position: lnglats[i],
+            map: map
+        });
+        marker.content = `我是第${i + 1}个Marker  <img src="https://www.baidu.com/img/baidu_jgylogo3.gif/" />`;
+        marker.on('click', markerClick);
+        marker.emit('click', {target: marker});
+    }
+    function markerClick(e) {
+        infoWindow.setContent(e.target.content);
+        infoWindow.open(map, e.target.getPosition());
+    }
+    map.setFitView();
+
+    //自适应点分布位置，使点能够显示完全
+    map.setFitView();
+    // todo 点击收藏
+    // $.ajax({
+    //     type: "get",
+    //     dataType: "json",
+    //     url: 'http://www.mangtuyou.com/index/index/marks', // 收藏接口
+    //     data: {收藏的城市},
+    //     success: function (data) {
+    //         console.log("data",data);
+    //     },
+    //     error:function (err) {
+    //         console.log("这是请求失败的");
+    //     }
+    // });
+
+    //------------------------------------------地址编码解析 begin
+    var mapObj;
+    var result;
+    var marker = [];
+    var windowsArr = [];
+    function mapInit() {
+        mapObj = new AMap.Map('iCenter');    //默认定位：初始化加载地图时，center及level属性缺省，地图默认显示用户所在城市范围
+    };
+    var MGeocoder;
+    var key_11;
+    var key_12;
+    function geocoder2() {  //POI搜索，关键字查询
+        key_11 = document.getElementById("key_11").value;
+        key_12 = document.getElementById("key_12").value;
+
+        if (key_11 == "" || typeof (key_11) == null || typeof (key_11) == 'undefined') {
+
+            alert("地图还未加载完成，无法获取相应点，请稍后...")
+        }
+
+        var lnglatXY = new AMap.LngLat(key_11, key_12);
+        //document.getElementById('result').innerHTML = "您输入的是：" + key_1;
+        //加载地理编码插件
+        mapObj.plugin(["AMap.Geocoder"], function () {
+            MGeocoder = new AMap.Geocoder({
+                radius: 1000,
+                extensions: "all"
+            });
+            //返回地理编码结果
+            AMap.event.addListener(MGeocoder, "complete", geocoder_CallBack2);
+            //逆地理编码
+            MGeocoder.getAddress(lnglatXY);
+        });
+
+        mapObj.setFitView();
+    }
+
+    function geocoder_CallBack2(data) { //回调函数
+        var resultStr = "";
+        var address;
+        //返回地址描述
+        address = data.regeocode.formattedAddress;
+        //返回周边道路信息
+
+        //返回结果拼接输出
+        resultStr = "<div style=\"font-size: 12px;padding:0px 0 4px 2px; border-bottom:1px solid #C1FFC1;\">" + "<b>地址</b>：" + address + "</div>";
+        document.getElementById("tipinput").value = address;
+        document.getElementById("result").innerHTML = resultStr;
+    }
+
+    //---------------------------------------------右键菜单    begin
+
+    var contextMenu = new AMap.ContextMenu();  //创建右键菜单
+    //右键放大
+    contextMenu.addItem("放大一级", function () {
+        map.zoomIn();
+    }, 0);
+    //右键缩小
+    contextMenu.addItem("缩小一级", function () {
+        map.zoomOut();
+    }, 1);
+    //右键显示全国范围
+    contextMenu.addItem("缩放至全国范围", function (e) {
+        map.setZoomAndCenter(4, [108.946609, 34.262324]);
+    }, 2);
+    //右键添加Marker站点
+    contextMenu.addItem("添加站点", function (e) {
+        addMarker();   //------------------------------------直接写方法，然后把上面的方法删了就行了
+    }, 3);
+    //右键添加Marker站点
+    contextMenu.addItem("删除站点", function (e) {
+
+    }, 4);//  ----------------------------------要添加跟多按钮的时候注意第三个参数不能重复
+
+    //地图绑定鼠标右击事件——弹出右键菜单
+    map.on('rightclick', function (e) {
+        contextMenu.open(map, e.lnglat);
+        contextMenuPositon = e.lnglat;
+    });
+
+    //---------------------------------------------右键菜单    begin
+</script>
+</body>
+
+</html>

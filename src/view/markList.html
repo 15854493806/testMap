@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>markList</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            color: #000000;
+        }
+        header {
+            height: 40px;
+            line-height: 40px;
+            background: red;
+            display: flex;
+            align-items: center;
+        }
+        header p {
+            font-size: 18px;
+            text-align: center;
+        }
+        header img {
+            width: 20px;
+            height: 20px;
+        }
+        header div {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .list {}
+
+        .list .item {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px;
+            align-items: center;
+            background: skyblue;
+            border: 1px solid #000;
+        }
+        .list .item .left {}
+
+        .list .item .left img {
+            width: 70px;
+            height: 70px;
+            vertical-align: middle;
+        }
+        .list .item .content {}
+        .list .item .content p{}
+
+        .list .item .content .over{}
+        .list .item .content .over p {
+            margin-bottom: 7px;
+        }
+
+        .list .item .content .load{
+            display: none;
+
+        }
+        .list .item .content .load {
+            vertical-align: middle;
+        }
+        .list .item .content .load p{
+            margin-bottom: 5px;
+        }
+        .list .item .content .load span {
+            margin-right: 7px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .list .item .content .load input{
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+        }
+        .list .item .right p{
+            margin-bottom: 7px;
+        }
+        .list .item .right img {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+<div class="list">
+    <header>
+        <img src="../image/back.png" alt="">
+        <div>
+            <p>收藏列表</p>
+        </div>
+    </header>
+    <div class="item">
+        <div class="left">
+            <img src="../image/zhoumo.png" alt="">
+        </div>
+        <div class="content">
+            <div class="over">
+                <p>姓名：<span class="name"></span></p>
+                <p>备注：<span class="note"></span></p>
+            </div>
+        </div>
+        <div class="right">
+            <p onclick="deleteItem()" class="del">
+                <img src="../image/delete.png" alt="">
+            </p>
+            <p onclick="edits()" class="edit">
+                <img src="../image/edit.png" alt="">
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+<script src="../js/jquery.min.js"></script>
+
+<script>
+    // 初始化获取数据
+    $(function () {
+        console.log(1)
+        $('.name')[0].innerText = '张三';
+        $('.note')[0].innerText = '张三的备注！！';
+    })
+    //编辑
+    function edits() {
+    }
+    // 删除
+    function deleteItem() {
+    }
+</script>
