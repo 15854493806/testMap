@@ -69,12 +69,43 @@
         .tab_imgItem {
             text-align: center;
         }
+
+        #markerDiv {
+            width: 200px;
+        }
+
+        #markerDiv .top {
+            padding: 5px;
+            border-bottom: 1px solid #cccccc;
+        }
+        #markerDiv .markText {
+            margin-bottom: 40px;
+        }
+        #markerDiv .content {
+            display: flex;
+        }
+        #markerDiv .content img {
+            width: 50px;
+            height: 50px;
+        }
+        #markerDiv .bottom {
+            display: flex;
+            justify-content: flex-end;
+            cursor:pointer
+        }
+        #markerDiv .bottom button {
+            color: #fff;
+            background: #E64340;
+            border: none;
+            border-radius: 4px;
+            padding: 3px 5px;
+        }
     </style>
 </head>
 
 <body onload="mapInit()">
-    <div id="container">
-    </div>
+<div id="container">
+</div>
 <!-- 底部选项 -->
 <div class="tab">
     <div class="tab_input">
@@ -89,10 +120,10 @@
             <img src="../image/biyou.png" alt />
             <p>markList</p>
         </div>
-        <div class="tab_imgItem" onclick="goToItem(2)">
-            <img src="../image/biyou.png" alt />
-            <p>图层显示</p>
-        </div>
+<!--        <div class="tab_imgItem" onclick="goToItem(2)">-->
+<!--            <img src="../image/biyou.png" alt />-->
+<!--            <p>图层显示</p>-->
+<!--        </div>-->
         <div class="tab_imgItem" onclick="goToItem(1)">
             <img src="../image/biyou.png" alt />
             <p>mark</p>
@@ -227,9 +258,42 @@
             position: lnglats[i],
             map: map
         });
-        marker.content = `我是第${i + 1}个Marker  <img src="https://www.baidu.com/img/baidu_jgylogo3.gif/" />`;
+        marker.content = `  <div id="markerDiv">
+            <div class="top">
+            <p>城市名</p>
+        </div>
+        <div class="content">
+        <img src="../image/addto.png" alt="">
+        <img src="../image/addto.png" alt="">
+        <img src="../image/addto.png" alt="">
+        </div>
+        <div class="markText">
+        <p>这里是景点简介这里是景点简介这里是景点简介这里是景点简介</p>
+</div>
+        <div class="bottom">
+        <button onclick="markGoTo()">收藏</button>
+        </div>
+        </div> `;
         marker.on('click', markerClick);
         marker.emit('click', {target: marker});
+    }
+    //景点收藏
+    function markGoTo(id) {
+        console.log('mark')
+        // $.ajax({
+        //     type: "get",
+        //     dataType: "json",
+        //     url: 'http://www.mangtuyou.com/index/index/favoriteAttractions',
+        //     data: {
+        //         id:id
+        //     },
+        //     success: function (data) {
+        //         console.log("data",data);
+        //     },
+        //     error:function (err) {
+        //         console.log("这是请求失败的");
+        //     }
+        // });
     }
     function markerClick(e) {
         infoWindow.setContent(e.target.content);
