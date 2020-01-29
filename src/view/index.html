@@ -31,6 +31,7 @@
             bottom: 0;
             z-index: 9999;
             width: 100%;
+            background: #ffffff;
         }
 
         .tab .tab_input {
@@ -56,16 +57,17 @@
         }
 
         .tab .tab_imgAll img {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
         }
 
         .tab .tab_imgAll p {
             text-align: center;
-            font-size: 14px;
+            font-size: 13px;
         }
         .tab_imgItem {
             text-align: center;
+            cursor: pointer;
         }
 
         #markerDiv {
@@ -86,6 +88,7 @@
         #markerDiv .content img {
             width: 50px;
             height: 50px;
+            margin-right: 10px;
         }
         #markerDiv .bottom {
             display: flex;
@@ -99,6 +102,10 @@
             border-radius: 4px;
             padding: 3px 5px;
         }
+
+        .amap-geolocation-con {
+            bottom: 45px !important;
+        }
     </style>
 </head>
 
@@ -108,23 +115,19 @@
 <!-- 底部选项 -->
 <div class="tab">
     <div class="tab_input">
-        <input type="text" placeholder="请输入" />
+        <input type="text" placeholder="请输入" id="srearchId" onkeydown="srearchFor()" />
     </div>
     <div class="tab_imgAll">
         <div class="tab_imgItem" onclick="goToItem(0)">
-            <img src="../image/biyou.png" alt />
+            <img src="../image/city.png" alt />
             <p>城市</p>
         </div>
-        <div class="tab_imgItem" onclick="goToItem(2)">
-            <img src="../image/biyou.png" alt />
+        <div class="tab_imgItem" onclick="goToItem(1)">
+            <img src="../image/list.png" alt />
             <p>markList</p>
         </div>
-<!--        <div class="tab_imgItem" onclick="goToItem(2)">-->
-<!--            <img src="../image/biyou.png" alt />-->
-<!--            <p>图层显示</p>-->
-<!--        </div>-->
-        <div class="tab_imgItem" onclick="goToItem(1)">
-            <img src="../image/biyou.png" alt />
+        <div class="tab_imgItem" onclick="goToItem(2)">
+            <img src="../image/mark.png" alt />
             <p>mark</p>
         </div>
     </div>
@@ -138,15 +141,37 @@
     function goToItem(type) {
         switch (type) {
             case 0:
-                window.location.href = 'drive.html'
+                window.location.href = 'drive.html'; //城市
                 break
             case 1:
-                window.location.href = 'mark.html'
+                window.location.href = 'markList.html'; // markList
                 break
             case 2:
-                window.location.href = 'mark.html'
+                window.location.href = 'mark.html'; // mark
                 break
         }
+    }
+
+//    搜索
+    function srearchFor() {
+        setTimeout(() => {
+            var srearchValue = $('#srearchId')[0].value;
+            console.log(srearchValue)
+            // $.ajax({
+            //     type: "get",
+            //     dataType: "json",
+            //     url: 'http://www.mangtuyou.com/index/index/favoriteAttractions',
+            //     data: {
+            //         id:id
+            //     },
+            //     success: function (data) {
+            //         console.log("data",data);
+            //     },
+            //     error:function (err) {
+            //         console.log("这是请求失败的");
+            //     }
+            // });
+        }, 100)
     }
 </script>
 
@@ -299,7 +324,6 @@
         infoWindow.open(map, e.target.getPosition());
     }
     map.setFitView();
-
     //自适应点分布位置，使点能够显示完全
     map.setFitView();
     // todo 点击收藏

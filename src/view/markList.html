@@ -17,32 +17,38 @@
         header {
             height: 40px;
             line-height: 40px;
-            background: red;
             display: flex;
             align-items: center;
+            border-bottom: 1px solid #cccccc;
+            background: #ffffff;
         }
         header p {
             font-size: 18px;
             text-align: center;
         }
         header img {
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
         }
         header div {
             display: flex;
             justify-content: space-around;
             width: 100%;
         }
-        .list {}
+        .list {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #F1F1F1;
+        }
 
         .list .item {
             display: flex;
-            justify-content: space-around;
             padding: 8px;
             align-items: center;
-            background: skyblue;
-            border: 1px solid #000;
+            margin-bottom: 10px;
+            background: #fff;
         }
         .list .item .left {}
 
@@ -51,7 +57,9 @@
             height: 70px;
             vertical-align: middle;
         }
-        .list .item .content {}
+        .list .item .content {
+            margin-left: 15px;
+        }
         .list .item .content p{}
 
         .list .item .content .over{}
@@ -79,14 +87,7 @@
             border: none;
             padding: 5px;
         }
-        .list .item .right p{
-            margin-bottom: 7px;
-        }
-        .list .item .right img {
-            width: 25px;
-            height: 25px;
-            vertical-align: middle;
-        }
+
     </style>
 </head>
 
@@ -108,14 +109,6 @@
                 <p>备注：<span class="note"></span></p>
             </div>
         </div>
-        <div class="right">
-            <p onclick="deleteItem()" class="del">
-                <img src="../image/delete.png" alt="">
-            </p>
-            <p onclick="edits()" class="edit">
-                <img src="../image/edit.png" alt="">
-            </p>
-        </div>
     </div>
 </div>
 </body>
@@ -126,14 +119,22 @@
 <script>
     // 初始化获取数据
     $(function () {
-        console.log(1)
         $('.name')[0].innerText = '张三';
         $('.note')[0].innerText = '张三的备注！！';
+        //获取marklist 数据
+        // $.ajax({
+        //     type: "get",
+        //     dataType: "json",
+        //     url: 'http://www.mangtuyou.com/index/index/favoriteAttractions',
+        //     data: {
+        //         id:id
+        //     },
+        //     success: function (data) {
+        //         console.log("data",data);
+        //     },
+        //     error:function (err) {
+        //         console.log("这是请求失败的");
+        //     }
+        // });
     })
-    //编辑
-    function edits() {
-    }
-    // 删除
-    function deleteItem() {
-    }
 </script>
