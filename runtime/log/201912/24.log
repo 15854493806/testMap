@@ -1,0 +1,98 @@
+[ 2019-12-24T08:11:31+08:00 ] 172.31.18.39 167.114.172.224 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.020412s][吞吐率：48.99req/s] [内存消耗：2,230.34kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'host' => 'www.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Dataprovider.com)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-12-24T12:55:21+08:00 ] 172.31.18.39 122.14.247.131 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.020468s][吞吐率：48.86req/s] [内存消耗：2,230.55kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-12-24T22:03:52+08:00 ] 172.31.18.39 223.78.217.255 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.013743s][吞吐率：72.76req/s] [内存消耗：1,202.24kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=115541760.2102148648009160200.1569687348304.4192',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-12-24T23:49:45+08:00 ] 172.31.18.39 47.98.105.103 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.020128s][吞吐率：49.68req/s] [内存消耗：2,230.45kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

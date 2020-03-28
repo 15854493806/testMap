@@ -1,0 +1,257 @@
+[ 2020-02-09T05:09:02+08:00 ] 172.31.18.39 175.171.188.171 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.031567s][吞吐率：31.68req/s] [内存消耗：2,460.76kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=259200',
+  'host' => 'www.mangtuyou.com',
+  'accept-encoding' => 'gzip,deflate',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; F9J; CMNTDFJS; InfoPath.3)',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000346s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000610s ]
+[ error ] [0]模板文件不存在:./themes/index/index/index.html[/www/wwwroot/www.mangtuyou.com/thinkphp/library/think/view/driver/Think.php:80]
+
+---------------------------------------------------------------
+[ 2020-02-09T20:00:05+08:00 ] 172.31.18.39 119.177.89.237 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.027954s][吞吐率：35.77req/s] [内存消耗：2,460.77kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000366s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000371s ]
+[ error ] [0]模板文件不存在:./themes/index/index/index.html[/www/wwwroot/www.mangtuyou.com/thinkphp/library/think/view/driver/Think.php:80]
+
+---------------------------------------------------------------
+[ 2020-02-09T20:00:05+08:00 ] 172.31.18.39 119.177.89.237 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.014287s][吞吐率：69.99req/s] [内存消耗：1,202.37kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mangtuyou.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-02-09T20:00:51+08:00 ] 172.31.18.39 119.177.89.237 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.027272s][吞吐率：36.67req/s] [内存消耗：2,460.80kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001224s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000261s ]
+[ error ] [0]模板文件不存在:./themes/index/index/index.html[/www/wwwroot/www.mangtuyou.com/thinkphp/library/think/view/driver/Think.php:80]
+
+---------------------------------------------------------------
+[ 2020-02-09T20:02:00+08:00 ] 172.31.18.39 119.177.89.237 GET /index/index/view
+[ log ] www.mangtuyou.com/index/index/view [运行时间：0.024181s][吞吐率：41.35req/s] [内存消耗：2,345.30kb] [文件加载：54]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=f1b304601a9b4b84d2dc4050f84296aac015e79e; serverType=apache; order=id%20desc; memRealUsed=863; mem-before=863/3789%20%28MB%29; memSize=3789; upNet=0; downNet=0; one=0.01; five=0.03; fifteen=0.05; conterError=; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/themes/index/index/view',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/view' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-02-09T20:02:08+08:00 ] 172.31.18.39 119.177.89.237 GET /index/index/index/view
+[ log ] www.mangtuyou.com/index/index/index/view [运行时间：0.027619s][吞吐率：36.21req/s] [内存消耗：2,464.52kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; BT_PANEL=f1b304601a9b4b84d2dc4050f84296aac015e79e; serverType=apache; order=id%20desc; memRealUsed=863; mem-before=863/3789%20%28MB%29; memSize=3789; upNet=0; downNet=0; one=0.01; five=0.03; fifteen=0.05; conterError=; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/themes/index/index/view',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index/view' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000291s ]
+[ error ] [0]模板文件不存在:./themes/index/index/index.html[/www/wwwroot/www.mangtuyou.com/thinkphp/library/think/view/driver/Think.php:80]
+
+---------------------------------------------------------------
+[ 2020-02-09T20:02:21+08:00 ] 172.31.18.39 119.177.89.237 GET /index/index/index/index/view
+[ log ] www.mangtuyou.com/index/index/index/index/view [运行时间：0.027774s][吞吐率：36.01req/s] [内存消耗：2,464.94kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; BT_PANEL=f1b304601a9b4b84d2dc4050f84296aac015e79e; serverType=apache; order=id%20desc; memRealUsed=863; mem-before=863/3789%20%28MB%29; memSize=3789; upNet=0; downNet=0; one=0.01; five=0.03; fifteen=0.05; conterError=; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/themes/index/index/view',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index/index/view' => '',
+  'index' => 'view',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000333s ]
+[ error ] [0]模板文件不存在:./themes/index/index/index.html[/www/wwwroot/www.mangtuyou.com/thinkphp/library/think/view/driver/Think.php:80]
+
+---------------------------------------------------------------
+[ 2020-02-09T20:02:27+08:00 ] 172.31.18.39 119.177.89.237 GET /index/index/index
+[ log ] www.mangtuyou.com/index/index/index [运行时间：0.027224s][吞吐率：36.73req/s] [内存消耗：2,464.51kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; BT_PANEL=f1b304601a9b4b84d2dc4050f84296aac015e79e; serverType=apache; order=id%20desc; memRealUsed=863; mem-before=863/3789%20%28MB%29; memSize=3789; upNet=0; downNet=0; one=0.01; five=0.03; fifteen=0.05; conterError=; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/themes/index/index/view',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000484s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000300s ]
+[ error ] [0]模板文件不存在:./themes/index/index/index.html[/www/wwwroot/www.mangtuyou.com/thinkphp/library/think/view/driver/Think.php:80]
+
+---------------------------------------------------------------

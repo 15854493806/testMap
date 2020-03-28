@@ -1,0 +1,121 @@
+[ 2019-12-02T00:45:34+08:00 ] 172.31.18.39 101.132.134.94 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.018418s][吞吐率：54.30req/s] [内存消耗：2,230.45kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-12-02T08:30:08+08:00 ] 172.31.18.39 123.151.77.71 GET /index/index_copy
+[ log ] www.mangtuyou.com/index/index_copy [运行时间：0.020791s][吞吐率：48.10req/s] [内存消耗：2,234.82kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index_copy',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-for-pound' => '123.121.16.142',
+  'x-forwarded-for' => '123.121.16.142',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; vivo X21A Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045008 Mobile Safari/537.36 MMWEBID/6988 MicroMessenger/7.0.8.1540(0x27000834) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.mangtuyou.com',
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/index_copy' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-12-02T08:30:09+08:00 ] 172.31.18.39 123.151.77.71 GET /index/index_copy?code=0819l8g31lt7fQ1mW1e31e08g319l8gz&state=1ZFENeVjbIw8pkF6
+[ log ] www.mangtuyou.com/index/index_copy?code=0819l8g31lt7fQ1mW1e31e08g319l8gz&state=1ZFENeVjbIw8pkF6 [运行时间：0.332713s][吞吐率：3.01req/s] [内存消耗：2,340.67kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index_copy',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-for-pound' => '123.121.16.142',
+  'x-forwarded-for' => '123.121.16.142',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; vivo X21A Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045008 Mobile Safari/537.36 MMWEBID/6988 MicroMessenger/7.0.8.1540(0x27000834) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.mangtuyou.com',
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/index/index_copy' => '',
+  'code' => '0819l8g31lt7fQ1mW1e31e08g319l8gz',
+  'state' => '1ZFENeVjbIw8pkF6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\IndexCopy->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/IndexCopy.php ]
+[ info ] [ VIEW ] ./themes/index/index_copy/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `os_user` WHERE  `openid` = 'oai1t1bOzAHr2evY9_jLm7hrA_zY' LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] INSERT INTO `os_user` (`openid` , `nickname` , `sex` , `city` , `province` , `country` , `headimgurl` , `accesstoken` , `tokentime` , `lasttime` , `create_time`) VALUES ('oai1t1bOzAHr2evY9_jLm7hrA_zY' , '宋涵霖🐒🐭🐉🎄🌳' , 2 , '' , '' , '中国' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI8GhdSBMon0CZnDs1xGJp9RzVkiamF7jZ8Y2WYicny6zT6SAic5Qkt50L67MXQU1iaibW5Ijh2k0b0zicA/132' , '28_JJz9zBYWr9j8TB3y8ADFazges_Y0A-eUsaQRG0iDS7-pow7W_Z1YH0y-14n6PbDVm0a0dGd65pHS1kAhg2Ss4iDhKCKMkAcqRi863l-6o94' , 1577838609 , 1575246609 , 1575246609) [ RunTime:0.000305s ]
+
+---------------------------------------------------------------
+[ 2019-12-02T08:30:09+08:00 ] 172.31.18.39 123.121.16.142 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.013464s][吞吐率：74.27req/s] [内存消耗：1,202.74kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'OPENID=oai1t1bOzAHr2evY9_jLm7hrA_zY',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mangtuyou.com/index/index_copy?code=0819l8g31lt7fQ1mW1e31e08g319l8gz&state=1ZFENeVjbIw8pkF6',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; vivo X21A Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045008 Mobile Safari/537.36 MMWEBID/6988 MicroMessenger/7.0.8.1540(0x27000834) Process/tools NetType/WIFI Language/zh_CN ABI/arm64',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

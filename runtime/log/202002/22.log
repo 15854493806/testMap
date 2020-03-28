@@ -1,0 +1,177 @@
+[ 2020-02-22T07:19:33+08:00 ] 172.31.18.39 58.242.194.173 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.019959s][吞吐率：50.10req/s] [内存消耗：2,176.77kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.1; Nexus 10 Build/JVP15P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/600.1.4',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-02-22T07:42:29+08:00 ] 172.31.18.39 58.17.6.9 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.019094s][吞吐率：52.37req/s] [内存消耗：2,176.77kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'UCWEB/2.0 (Java; U; MIDP-2.0; Nokia203/20.37) U2/1.0.0 UCMini/11.1.0.1041 (SpeedMode; Proxy; Android 4.4.2; SM-G600FY ) U2/1.0.0 Mobile',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-02-22T13:16:27+08:00 ] 172.31.18.39 223.78.222.40 GET /index/index/index.html
+[ log ] www.mangtuyou.com/index/index/index.html [运行时间：0.021075s][吞吐率：47.45req/s] [内存消耗：2,181.04kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'serverType=apache; order=id%20desc; memSize=3789; uploadSize=1073741824; copyFileName=/www/wwwroot/www.mangtuyou.com; cutFileName=null; SetId=dfile; ChangePath=24; SetName=www.mangtuyou.com.tar.gz; conterError=; BatchSelected=1; BatchPaste=1; rank=a; fifteen=0.05; one=0; five=0.01; Path=/www/wwwroot/www.mangtuyou.com/themes/index/index; BT_PANEL=193cbd9ae81e0638980f4e688317f440fb1a4c73; memRealUsed=866; mem-before=866/3789%20%28MB%29; downNet=0; upNet=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-02-22T13:16:29+08:00 ] 172.31.18.39 223.78.222.40 GET /index/index/getlist?class=1&uid=19
+[ log ] www.mangtuyou.com/index/index/getlist?class=1&uid=19 [运行时间：0.021938s][吞吐率：45.58req/s] [内存消耗：2,373.13kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'serverType=apache; order=id%20desc; memSize=3789; uploadSize=1073741824; copyFileName=/www/wwwroot/www.mangtuyou.com; cutFileName=null; SetId=dfile; ChangePath=24; SetName=www.mangtuyou.com.tar.gz; conterError=; BatchSelected=1; BatchPaste=1; rank=a; fifteen=0.05; one=0; five=0.01; Path=/www/wwwroot/www.mangtuyou.com/themes/index/index; memRealUsed=866; mem-before=866/3789%20%28MB%29; downNet=0; upNet=0; BT_PANEL=29f851b3d8ad333ac6d9a1d3119c8e4ef94c66ba',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mangtuyou.com/index/index/index.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getlist' => '',
+  'class' => '1',
+  'uid' => '19',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getList[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000328s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` WHERE  `classid` = 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_collection_user` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `os_collection_user` WHERE  `uid` = 19  AND `sid` = 29 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `os_collection_user` WHERE  `uid` = 19  AND `sid` = 30 LIMIT 1 [ RunTime:0.000146s ]
+
+---------------------------------------------------------------
+[ 2020-02-22T13:16:30+08:00 ] 172.31.18.39 223.78.222.40 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.011398s][吞吐率：87.74req/s] [内存消耗：1,115.03kb] [文件加载：33]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'serverType=apache; order=id%20desc; memSize=3789; uploadSize=1073741824; copyFileName=/www/wwwroot/www.mangtuyou.com; cutFileName=null; SetId=dfile; ChangePath=24; SetName=www.mangtuyou.com.tar.gz; conterError=; BatchSelected=1; BatchPaste=1; rank=a; fifteen=0.05; one=0; five=0.01; Path=/www/wwwroot/www.mangtuyou.com/themes/index/index; memRealUsed=866; mem-before=866/3789%20%28MB%29; downNet=0; upNet=0; BT_PANEL=29f851b3d8ad333ac6d9a1d3119c8e4ef94c66ba',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mangtuyou.com/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-02-22T22:58:26+08:00 ] 172.31.18.39 104.197.75.152 GET /wp-login.php
+[ log ] www.mangtuyou.com/wp-login.php [运行时间：0.010677s][吞吐率：93.66req/s] [内存消耗：1,114.15kb] [文件加载：33]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-login.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/wp-login_php' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

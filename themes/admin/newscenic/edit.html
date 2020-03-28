@@ -1,0 +1,236 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/newscenic/index')}">景区管理</a></li>
+            <li class=""><a href="{:url('admin/newscenic/add')}">添加管理</a></li>
+            <li class="layui-this">修改景区</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/newscenic/update')}" method="post">
+
+                  	<div class="layui-form-item">
+                        <label class="layui-form-label">景区类别</label>
+                        <div class="layui-input-block">
+                            <select name="classid" lay-verify="required" lay-filter="typeSelect">
+                                <option value="1" {if condition="$scenic.classid eq 1"}selected = "selected"{/if}>必游</option>
+                                <option value="2" {if condition="$scenic.classid eq 2"}selected = "selected"{/if}>推荐</option>
+                                <option value="3" {if condition="$scenic.classid eq 3"}selected = "selected"{/if}>周末游</option>
+                                <option value="4" {if condition="$scenic.classid eq 4"}selected = "selected"{/if}>特色</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">中_景区名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name_cn" value="{$scenic.name_cn}" required  lay-verify="required" placeholder="请输入景区名称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">韩_景区名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name_kr" value="{$scenic.name_kr}" required  lay-verify="required" placeholder="请输入景区名称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">经度</label>
+                            <div class="layui-input-inline">
+                                <input id="lon" value="{$scenic.lon}" type="tel" name="lon" placeholder="点击地图获取经度" autocomplete="off" class="layui-input" readonly="true">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">纬度</label>
+                            <div class="layui-input-inline">
+                                <input id="lat"  value="{$scenic.lat}"type="text" name="lat" placeholder="点击地图获取纬度" autocomplete="off" class="layui-input" readonly="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">地图:</label>
+                        <div class="layui-input-block">
+                            <div id="Map" class="layui-colla-content layui-show"  style="height: 400px;"></div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">景区图片</label>
+                        <div class="layui-input-block">
+                            <button type="button" id="upload-photo-btn" class="layui-btn">上传图片</button>
+                            <div id="photo-container">
+                                {foreach name="$scenic['img']" item = "item"}
+                                <div class="photo-list">
+                                    <input type="text" name="img[]" value="{$item}" class="layui-input layui-input-inline" style="display:none;">
+                                    <img src="{$item}" style="width:200px;">
+                                    <button type="button" class="layui-btn layui-btn-danger remove-photo-btn">移除</button>
+                                </div>
+                                {/foreach}
+                            </div>
+                        </div>
+                    </div>
+                  	<div class="layui-form-item">
+                        <label class="layui-form-label">中_景区描述</label>
+                        <div class="layui-input-block">
+                            <textarea name="content_cn" placeholder="" class="layui-textarea" id="content_cn">{$scenic.content_cn}</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">韩_景区描述</label>
+                        <div class="layui-input-block">
+                            <textarea name="content_kr" placeholder="" class="layui-textarea" id="content_kr">{$scenic.content_kr}</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <input type="hidden"  name="id" value="{$scenic.id}">
+                            <input type="hidden" id="city" name="city" value="{$scenic.city}">
+                            <input type="hidden" id="district" name="district" value="{$scenic.district}">
+                            <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
+{block name="js"}
+<script src="__JS__/ueditor/ueditor.config.js"></script>
+<script src="__JS__/ueditor/ueditor.all.min.js"></script>
+
+{/block}
+{block name="script"}
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=b76d1ab35b5b7512b730021ff06e0e25"></script>
+<script>
+    $(function() {
+
+        form.on('select(typeSelect)', function(data){
+            
+            $.ajax({
+            cache: true,
+            type: "POST",
+            url: "http://admin1.mangtuyou.com/admin/spot/getCityimg/id/"+data.value+"",
+            contentType: 'application/x-www-form-urlencoded',
+            dataType: 'JSON',
+            data :  {},
+            async : true,
+            success : function(request){
+              $("#cityimg").empty();
+              $("#cityimg").attr("src",request);
+              
+            },
+            error : function(request) {
+                alert(request);
+            },
+        });
+        });
+        var ue = UE.getEditor('content_kr');
+      var ue = UE.getEditor('content_cn'),
+            uploadEditor = UE.getEditor('upload-photo-btn'),
+            photoListItem,
+            uploadImage;
+
+        // 上传图片
+         var   uploadEditor = UE.getEditor('upload-photo-btn'),
+            photoListItem,
+            uploadImage;
+
+        uploadEditor.ready(function () {
+            uploadEditor.setDisabled();
+            uploadEditor.hide();
+            uploadEditor.addListener('beforeInsertImage', function (t, arg) {
+                $.each(arg, function (index, item) {
+                    photoListItem = '<div class="photo-list"><input type="text" name="img[]" value="' + item.src + '" class="layui-input layui-input-inline" style="display:none;"><img src="'+ item.src + '" style="width:200px;">';
+                    photoListItem += '<button type="button" class="layui-btn layui-btn-danger remove-photo-btn">移除</button></div>';
+
+                    $('#photo-container').append(photoListItem).on('click', '.remove-photo-btn', function () {
+                        $(this).parent('.photo-list').remove();
+                    });
+                });
+            });
+        });
+
+        $('#upload-photo-btn').on('click', function () {
+            uploadImage = uploadEditor.getDialog("insertimage");
+            uploadImage.open();
+        });
+
+    });
+
+  $(function () {
+      var map = new AMap.Map("Map", {
+          resizeEnable: true,
+          center: [{$scenic.lon}, {$scenic.lat}],
+          zoom: 13
+      });
+      // 创建一个 Marker 实例：
+      var marker = new AMap.Marker({
+          position: new AMap.LngLat({$scenic.lon}, {$scenic.lat}),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+          title: "当前位置",
+          label:{
+              offset: new AMap.Pixel(0, 0),  //设置文本标注偏移量
+              content: "<div class='info'>当前选中</div>", //设置文本标注内容
+              direction: 'top' //设置文本标注方位
+          }
+      });
+      map.add(marker);
+      map.on('click', function(e) {
+          var pos = [e.lnglat.getLng(),e.lnglat.getLat()];
+          document.getElementById("lon").value = pos[0];
+          document.getElementById("lat").value = pos[1];
+          map.remove(marker);
+          marker = new AMap.Marker({
+              position: new AMap.LngLat(e.lnglat.getLng(), e.lnglat.getLat()),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+              title: "当前选中",
+              label:{
+                  offset: new AMap.Pixel(0, 0),  //设置文本标注偏移量
+                  content: "<div class='info'>当前选中</div>", //设置文本标注内容
+                  direction: 'top' //设置文本标注方位
+              }
+          });
+
+          //获取城市
+          AMap.service('AMap.Geocoder',function(){
+              //实例化Geocoder
+              geocoder = new AMap.Geocoder({city: "" });
+              geocoder.getAddress(pos, function(status, result) {
+                  if (status === 'complete' && result.info === 'OK') {
+                      document.getElementById("city").value = result.regeocode.addressComponent.city;
+                      document.getElementById("district").value = result.regeocode.addressComponent.district;
+                  }else
+                      alert('获取城市失败');
+
+              });
+          });
+          map.add(marker);
+      });
+// 将创建的点标记添加到已有的地图实例：
+
+  });
+
+
+
+  function switchimg(id){
+       console.log(id)
+        $.ajax({
+            cache: true,
+            type: "POST",
+            url: "http://admin1.mangtuyou.com/admin/spot/getCityimg/id/"+id+"",
+            contentType: 'application/x-www-form-urlencoded',
+            dataType: 'JSON',
+            data :  {},
+            async : true,
+            success : function(request){
+               console.log(request)
+            },
+            error : function(request) {
+                alert(request);
+            },
+        });
+ }
+
+</script>
+{/block}

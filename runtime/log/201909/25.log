@@ -1,0 +1,259 @@
+[ 2019-09-25T06:26:58+08:00 ] 192.168.1.87 47.101.199.176 GET /
+[ log ] wechat1.wfdingrui.com/ [运行时间：0.014734s][吞吐率：67.87req/s] [内存消耗：1,467.20kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/wechat1.wfdingrui.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'wechat1.wfdingrui.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-25T06:26:58+08:00 ] 192.168.1.87 47.101.199.176 GET /admin/login/index.html
+[ log ] wechat1.wfdingrui.com/admin/login/index.html [运行时间：0.016020s][吞吐率：62.42req/s] [内存消耗：1,501.39kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/wechat1.wfdingrui.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'wechat1.wfdingrui.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/wechat1.wfdingrui.com/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] ./themes/admin/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-25T11:20:24+08:00 ] 192.168.1.87 39.90.94.55 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] wechat1.wfdingrui.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.026142s][吞吐率：38.25req/s] [内存消耗：2,425.27kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/wechat1.wfdingrui.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.5;q=0.4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36 QBCore/3.53.1159.400 QQBrowser/9.0.2524.400 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'wechat1.wfdingrui.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `img` FROM `os_example` LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000147s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:21]
+[ error ] [8]未定义变量: where[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:22]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-09-25T11:21:26+08:00 ] 192.168.1.87 101.91.60.104 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] wechat1.wfdingrui.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.025778s][吞吐率：38.79req/s] [内存消耗：2,422.84kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/wechat1.wfdingrui.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'wechat1.wfdingrui.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM801 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000266s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT `img` FROM `os_example` LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000150s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:21]
+[ error ] [8]未定义变量: where[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:22]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/wechat1.wfdingrui.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-09-25T13:11:18+08:00 ] 192.168.1.87 106.15.224.203 GET /
+[ log ] wechat1.wfdingrui.com/ [运行时间：0.015729s][吞吐率：63.58req/s] [内存消耗：1,467.21kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/wechat1.wfdingrui.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'wechat1.wfdingrui.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-25T13:11:18+08:00 ] 192.168.1.87 106.15.224.203 GET /admin/login/index.html
+[ log ] wechat1.wfdingrui.com/admin/login/index.html [运行时间：0.016986s][吞吐率：58.87req/s] [内存消耗：1,501.39kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/wechat1.wfdingrui.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'wechat1.wfdingrui.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/wechat1.wfdingrui.com/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] ./themes/admin/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-25T13:58:44+08:00 ] 192.168.1.87 47.101.196.52 GET /
+[ log ] wechat1.wfdingrui.com/ [运行时间：0.015981s][吞吐率：62.57req/s] [内存消耗：1,467.21kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/wechat1.wfdingrui.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'wechat1.wfdingrui.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-09-25T13:58:44+08:00 ] 192.168.1.87 47.101.196.52 GET /admin/login/index.html
+[ log ] wechat1.wfdingrui.com/admin/login/index.html [运行时间：0.015989s][吞吐率：62.54req/s] [内存消耗：1,501.39kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/wechat1.wfdingrui.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'wechat1.wfdingrui.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/wechat1.wfdingrui.com/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] ./themes/admin/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

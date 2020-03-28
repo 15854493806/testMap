@@ -1,0 +1,99 @@
+[ 2020-03-03T04:07:05+08:00 ] 172.31.18.39 171.13.14.37 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.020796s][吞吐率：48.09req/s] [内存消耗：2,176.97kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'proxy-connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-03-03T19:22:19+08:00 ] 172.31.18.39 220.181.108.89 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.020028s][吞吐率：49.93req/s] [内存消耗：2,177.25kb] [文件加载：48]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip',
+  'if-none-match' => '"21b9-593c19c9f880b-gzip"',
+  'if-modified-since' => 'Mon, 30 Sep 2019 09:10:49 GMT',
+  'accept-language' => 'zh-cn,zh-tw',
+  'user-agent' => 'Mozilla/5.0 (Linux;u;Android 4.2.2;zh-cn;) AppleWebKit/534.46 (KHTML,like Gecko) Version/5.1 Mobile Safari/10600.6.3 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'connection' => 'close',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-03-03T19:22:20+08:00 ] 172.31.18.39 111.206.198.50 GET /index/index/getlist?class=1
+[ log ] www.mangtuyou.com/index/index/getlist?class=1 [运行时间：0.024670s][吞吐率：40.54req/s] [内存消耗：2,372.73kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/',
+  'resource-type' => '13',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-devtools-emulate-network-conditions-client-id' => 'fa654acf-6331-404d-a5e8-4bbd65124dea',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getlist' => '',
+  'class' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getList[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` WHERE  `classid` = 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_collection_user` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT * FROM `os_collection_user` WHERE  `uid` = 19  AND `sid` = 29 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `os_collection_user` WHERE  `uid` = 19  AND `sid` = 30 LIMIT 1 [ RunTime:0.000285s ]
+
+---------------------------------------------------------------

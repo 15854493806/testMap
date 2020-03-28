@@ -1,0 +1,112 @@
+{extend name="base" /}
+{block name="body"}
+<script src="/public/static/js/laydate/laydate.js"></script>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/user/index')}">用户管理</a></li>
+            <li class=""><a href="{:url('admin/user/add')}">添加用户</a></li>
+            <li class="layui-this">编辑用户</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/user/update')}" method="post" enctype="multipart/form-data">
+                    <div class="layui-form-item">
+                        <input type="hidden" name="id" value="{$user.id}">
+                        <label class="layui-form-label">用户名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="username" value="{$user.username}" required lay-verify="required" placeholder="请输入用户名" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">上传头像</label>
+                        <div class="layui-input-block">
+                            <input type="file" name="photo"><img src="{$user.photo}" width="70px" height="55px">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">密码</label>
+                        <div class="layui-input-block">
+                            <input type="password" name="password" value=""  lay-verify="required" placeholder="如果密码为空，则不会修改" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">重复密码</label>
+                        <div class="layui-input-block">
+                            <input type="password" name="password_confirm" value="" lay-verify="required" placeholder="如果密码为空，则不会修改" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">手机</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="mobile" value="{$user.mobile}" placeholder="（必填）请输入手机" class="layui-input">
+                        </div>
+                    </div>                   
+
+                    <div class="layui-inline">
+                      <label class="layui-form-label">购车时间</label>
+                      <div class="layui-input-inline">
+                        <input type="text" class="layui-input" id="test1" name="buy_time" value="{$user.buy_time}" placeholder="" lay-key="1">
+                      </div> 
+                    </div>
+                    
+                    
+                  <div class="layui-inline">
+                      <label class="layui-form-label">汽车型号</label>
+                      <div class="layui-input-inline">
+                        <select name="buy_type" lay-verify="required" lay-search="">
+                          <option value="">直接选择或搜索选择</option>
+                          <option value="1"  {if $user.buy_type == 1} selected {/if}>layer</option>
+                          <option value="2"  {if $user.buy_type == 2} selected {/if}>form</option>
+                          <option value="3"  {if $user.buy_type == 3} selected {/if}>layim</option>
+                          <option value="4"  {if $user.buy_type == 4} selected {/if}>element</option>
+                          <option value="5"  {if $user.buy_type == 5} selected {/if}>laytpl</option>
+                          <option value="6"  {if $user.buy_type == 6} selected {/if}>upload</option>
+                          <option value="7"  {if $user.buy_type == 7} selected {/if}>laydate</option>
+                          <option value="8">laypage</option>
+                          <option value="9">flow</option>
+                          <option value="10">util</option>
+                          <option value="11">code</option>
+                          <option value="12">tree</option>
+                          <option value="13">layedit</option>
+                          <option value="14">nav</option>
+                          <option value="15">tab</option>
+                          <option value="16">table</option>
+                          <option value="17">select</option>
+                          <option value="18">checkbox</option>
+                          <option value="19">switch</option>
+                          <option value="20">radio</option>
+                        </select>
+                      </div>
+                    </div>
+
+                     <div class="layui-form-item" style="margin-top: 10px;">
+                        <label class="layui-form-label">汽车牌照</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="buy_mark" value="{$user.buy_mark}" required lay-verify="required" placeholder="请输入汽车牌照" class="layui-input">
+                        </div>
+                    </div>
+
+
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <input type="submit" class="layui-btn">
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  laydate.render({
+    elem: '#test1' //指定元素
+  });
+</script>
+
+{/block}

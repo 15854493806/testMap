@@ -1,0 +1,59 @@
+{extend name="base" /}
+{block name="body"}
+<script src="/public/static/js/laydate/laydate.js"></script>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/type/index')}">型号管理</a></li>
+            <li class=""><a href="{:url('admin/type/add')}">添加型号</a></li>
+            <li class="layui-this">编辑型号</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/type/update')}" method="post" enctype="multipart/form-data">
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">所属品牌</label>
+                    <div class="layui-input-block">
+                      <select name="pid" lay-filter="aihao">
+                        {foreach name="brand" item='vo'}
+                        <option value="{$vo.id}" {if $data.pid == $vo.id} selected {/if}>{$vo.name}</option>
+                        {/foreach}
+                      </select>
+                    </div>
+                  </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">车型名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" value="{$data.name}"  placeholder="请输入车型名称" class="layui-input">
+                            <input type="hidden" name="id" value='{$data.id}'>
+                        </div>
+                    </div>
+                   <div class="layui-form-item">
+
+                        <label class="layui-form-label">车型标志</label>
+
+                        <div class="layui-input-block">
+
+                            <input type="text" name="img" value="{$data.img}" class="layui-input layui-input-inline" id="thumb">
+
+                            <input type="file" name="file" class="layui-upload-file">
+                            (推荐：100*100 最少比例相同)
+                        </div>
+                        <img src="{$data.img}" id ="thumb1">
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                              
+                              <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                              <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/block}

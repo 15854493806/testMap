@@ -1,0 +1,445 @@
+[ 2019-10-18T09:58:45+08:00 ] 172.31.18.39 111.206.221.112 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.024157s][吞吐率：41.40req/s] [内存消耗：2,425.88kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/pc.html',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => '46b96317-3cd8-4bd5-8add-44b68c07405b',
+  'origin' => 'http://www.mangtuyou.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000303s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000235s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-10-18T10:32:04+08:00 ] 172.31.18.39 111.206.198.131 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.024859s][吞吐率：40.23req/s] [内存消耗：2,425.89kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => 'c02aa8ad-e3a4-4a44-b423-f1db84632295',
+  'origin' => 'http://www.mangtuyou.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000229s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-10-18T10:32:05+08:00 ] 172.31.18.39 111.206.198.226 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.024378s][吞吐率：41.02req/s] [内存消耗：2,425.89kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => '0e4b9ed5-9490-4edd-bc28-df129018b92d',
+  'origin' => 'http://www.mangtuyou.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000193s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-10-18T11:37:49+08:00 ] 172.31.18.39 47.101.45.183 GET /
+[ log ] admin.mangtuyou.com/ [运行时间：0.012702s][吞吐率：78.73req/s] [内存消耗：1,469.69kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'admin.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-10-18T11:37:49+08:00 ] 172.31.18.39 47.101.45.183 GET /admin/login/index.html
+[ log ] admin.mangtuyou.com/admin/login/index.html [运行时间：0.014519s][吞吐率：68.88req/s] [内存消耗：1,503.80kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'admin.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/admin.mangtuyou.com/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] ./themes/admin/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-10-18T11:38:44+08:00 ] 172.31.18.39 111.206.198.135 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.026713s][吞吐率：37.43req/s] [内存消耗：2,425.89kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => 'c24e72e9-5cc4-4363-95b4-94bb0d683224',
+  'origin' => 'http://www.mangtuyou.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000427s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000214s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-10-18T11:38:45+08:00 ] 172.31.18.39 111.206.221.75 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.023600s][吞吐率：42.37req/s] [内存消耗：2,425.93kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => 'c19f7aa6-e14a-4558-8c67-516be6766af6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'origin' => 'http://www.mangtuyou.com',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000175s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-10-18T21:59:29+08:00 ] 172.31.18.39 111.206.221.110 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.025419s][吞吐率：39.34req/s] [内存消耗：2,425.93kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/pc.html',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => 'b3071a47-43b6-460c-b3b9-d5d771ccc4d1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'origin' => 'http://www.mangtuyou.com',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000450s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000149s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-10-18T22:16:52+08:00 ] 172.31.18.39 111.206.221.39 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.025620s][吞吐率：39.03req/s] [内存消耗：2,425.93kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => '0673146f-a69b-4613-a250-a8ce8386e1d2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'origin' => 'http://www.mangtuyou.com',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000143s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-10-18T22:16:53+08:00 ] 172.31.18.39 111.206.221.87 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.027381s][吞吐率：36.52req/s] [内存消耗：2,425.93kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => 'b314cb87-9ad9-4a8e-9581-3952c7981eb4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'origin' => 'http://www.mangtuyou.com',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000264s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------

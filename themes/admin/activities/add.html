@@ -1,0 +1,51 @@
+{extend name="base" /}
+{block name="body"}
+<script src="/public/static/js/jquery.min.js"></script>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/activities/index')}">广告管理</a></li>
+            <li class="layui-this">添加广告</li>
+        </ul>
+        <div class="layui-tab-content">
+
+            <div class="layui-tab-item layui-show">
+                <form  action="{:url('admin/activities/save')}" method="post" enctype="multipart/form-data">
+
+
+                        <div class="layui-form-item layui-form form-container">
+                            <label class="layui-form-label">企业可看：</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="enterprisescheck" value="0" title="否" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i></div>
+                                <input type="radio" name="enterprisescheck" value="1" title="是"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon" ></i></div>
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item layui-form form-container">
+                            <label class="layui-form-label">屏蔽：</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="status" value="0" title="否" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i></div>
+                                <input type="radio" name="status" value="1" title="是"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon" ></i></div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <input type="submit" class="layui-btn">
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/block}

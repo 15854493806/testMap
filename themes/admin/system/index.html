@@ -1,0 +1,64 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">配置管理</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/system/update')}" method="post">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">KeyID</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="KeyID" value="{$System.KeyID}" required lay-verify="required" placeholder="" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">KeySecret</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="KeySecret" value="{$System.KeySecret}" required lay-verify="required" placeholder="" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">Endpoint</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="Endpoint" value="{$System.Endpoint}" required lay-verify="required" placeholder="" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">Bucket</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="Bucket" value="{$System.Bucket}" required lay-verify="required" placeholder="" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">状态</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="status" value="1" title="启用" {if condition="$System.status==1"} checked="checked"{/if}>
+                            <input type="radio" name="status" value="0" title="禁用" {if condition="$System.status==0"} checked="checked"{/if}>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">全国</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="CityOpen" value="1" title="启用" {if condition="$System.CityOpen==1"} checked="checked"{/if}>
+                            <input type="radio" name="CityOpen" value="0" title="禁用" {if condition="$System.CityOpen==0"} checked="checked"{/if}>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">更新</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

@@ -1,0 +1,80 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">发票管理</li>
+            <!-- <li class=""><a href="{:url('admin/invoice/add')}">添加发票</a></li> -->
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+
+                <!-- <form class="layui-form layui-form-pane" action="{:url('admin/invoice/index')}" method="get">
+                   <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="" placeholder="请输入用户名" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">搜索</button>
+                    </div>
+                </form> -->
+                <hr>
+
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                        <th>用户名</th>
+                        <th>单位名称</th>
+                        <th>纳税识别号</th>
+                        <th>注册地址</th>
+                        <th>注册电话</th>
+                        <th>开户行</th>
+                        <th>银行卡号</th>
+                        <th>审核状态</th>
+                     	<th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="data" item="vo"}
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.username}</td>
+                        <td>{$vo.name}</td>
+                        <td>{$vo.identify}</td>
+                        <td>{$vo.site}</td>
+                        <td>{$vo.phone}</td>
+                        <td>{$vo.bank}</td>
+                        <td>{$vo.number}</td>
+                        <td>
+                            {if $vo.status==1}已通过
+                            {/if}
+							{if $vo.status==2}未通过
+                            {/if}
+                        	{if $vo.status==0}审核中
+                            {/if}
+                        </td>
+                      	{if $vo.status==0}
+                      		<td>
+                                <a href="{:url('admin/invoice/edit',['id'=>$vo['id'],'status'=>'1'])}" class="layui-btn layui-btn-normal layui-btn-mini ajax-verify">通过</a>
+								<a href="{:url('admin/invoice/edit',['id'=>$vo['id'],'status'=>'2'])}" class="layui-btn layui-btn-danger layui-btn-mini ajax-verify">拒绝</a>
+                        	</td>
+                      {else /}
+                      		<td>
+                                <a href="{:url('admin/invoice/reset',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini ajax-verify">重置</a>
+                        	</td>
+                      {/if}
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页-->
+              {$data->render()}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

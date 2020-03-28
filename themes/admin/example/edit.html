@@ -1,0 +1,154 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/example/index')}">地图管理</a></li>
+            <li class=""><a href="{:url('admin/slide/add')}">添加地图</a></li>
+            <li class="layui-this">编辑地图</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/slide/update')}" method="post">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">城市名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" value="{$example.name}" required  lay-verify="required" placeholder="请输入名称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">地图</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="img" value="{$example.img}" placeholder="（选填）请上传图片" class="layui-input layui-input-inline" id="thumb">
+                            <input type="file" name="file" class="layui-upload-file">
+                        </div>
+                      	<img id="thumb1" src="{$example.img}" style="margin-left:100px;margin-top:20px;width:300px;">
+                    </div>
+                   <div id="cityCoordinates" style="">
+                          <label class="layui-form-label">x</label> <label class="layui-form-label" id="x"></label>
+                          <label class="layui-form-label">y</label> <label class="layui-form-label" id="y"></label>
+                         <div class="layui-form-item">
+                        <label class="layui-form-label">城市名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="cityname" value="" required  lay-verify="required" placeholder="请输入名称" class="layui-input">
+                        </div>
+                        <div class="layui-form-item" style="margin-top:20px">
+                        <label class="layui-form-label">跳转链接</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="urlname" value="" required  lay-verify="required" placeholder="请输入跳转链接" class="layui-input">
+                        </div>
+                         <input name="url" type="text" value="{$example.url}" id="url" style="display:none">
+                         <div class="layui-input-block" style="margin-top:30px">
+                            <input type="button" onclick="sava()" value="确定" style="border:1px solid #C9C9C9;background-color:#fff;height:38px;text-align:center;padding:0px 18px;line-height:38px;">
+                        </div>
+                        <div id="savacity">
+                           
+                        </div>
+                    </div>
+                    
+                    </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <input type="hidden" name="id" value="{$example.id}">
+                            <button class="layui-btn" lay-submit lay-filter="*">更新</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    var width ;
+  var height;
+  var x;
+  var y;
+  var a=$("#url").val();
+  var par=$.parseJSON(a);
+                      
+    $(function(){
+      savacity()
+      console.log("000")
+    window.onload=function(){
+     width = $("#thumb1").width(),//width()返回元素的宽高，不包括padding/border/margin
+        height = $("#thumb1").height();//innerWidth()返回元素的宽高 + padding
+    console.log(a,b);
+}
+    })
+ $('#thumb1').click(function(e){
+     console.log(height)
+    // $("#cityCoordinates").show()
+    x=e.offsetX/width*100
+    y=e.offsetY/height*100
+    x=x.toFixed(2)
+    y=y.toFixed(2)
+    $("#x").empty()
+    $("#x").append(x)
+     $("#y").empty()
+    $("#y").append(y)
+});
+  function sava(){
+      
+    var cityname=$("[name='cityname']").val()
+    var urlname=$("[name='urlname']").val()
+    if(cityname&&urlname){
+   var parm={}
+      parm.cityname=cityname;
+      parm.urlname=urlname;
+      parm.x=x;
+      parm.y=y;
+      $("#savacity").show()
+      par.push(parm)
+      savacity()
+      $("#url").val();
+      $("#url").val(JSON.stringify(par));
+    }else{
+      alert("跳转链接或城市不能为空")
+    }
+    console.log(par)
+ }
+ function savacity(){
+    $("#savacity").empty()
+    for(var i=0;i<par.length;i++){
+      $("#savacity").append(
+        "<div style='width:100%;height:50px'>"+
+            "                           <label class='layui-form-label' '>x:"+par[i].x+"</label>" +
+           "                           <label class='layui-form-label' '>y:"+par[i].y+"</label>" +
+            "                          <label class='layui-form-label' >"+par[i].cityname+"</label>" +
+            "                          <label class='layui-form-label' style='width:100px;'>"+par[i].urlname+"</label>" +
+            "                           <label class='layui-form-label' onclick='delect("+i+")')>删除</label>"+
+        "</div>"
+      )
+    }
+  }
+function getImageWidth(url,callback){
+    var img = new Image();
+    img.src = url;
+    // 如果图片被缓存，则直接返回缓存数据
+    if(img.complete){
+        callback(img.width, img.height);
+    }else{
+        img.onload = function(){
+            callback(img.width, img.height);
+        }
+    }
+}
+  function delect(id){ 
+    var a
+    if(id==1){
+      a=id
+    }else
+    if(id==0){
+     a=id+1
+    }else{
+     a=id-1
+    }
+      par.splice(id,a);
+      savacity()
+  }
+</script>
+{/block}

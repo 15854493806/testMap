@@ -1,0 +1,116 @@
+[ 2019-12-20T07:00:55+08:00 ] 172.31.18.39 221.232.207.212 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.020992s][吞吐率：47.64req/s] [内存消耗：2,230.60kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mangtuyou.com',
+  'accept-encoding' => 'gzip,deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.35 Safari/537.36',
+  'accept-language' => 'en',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-12-20T22:43:32+08:00 ] 172.31.18.39 223.104.252.36 GET /index/index_copy
+[ log ] www.mangtuyou.com/index/index_copy [运行时间：0.017748s][吞吐率：56.34req/s] [内存消耗：2,234.17kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index_copy',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/4G Language/zh_HK',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index_copy' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-12-20T22:43:33+08:00 ] 172.31.18.39 223.104.252.36 GET /index/index_copy?code=001nra9h1btLzr00qWbh1FhU8h1nra9P&state=Rwm9wMBtT2UsM2GU
+[ log ] www.mangtuyou.com/index/index_copy?code=001nra9h1btLzr00qWbh1FhU8h1nra9P&state=Rwm9wMBtT2UsM2GU [运行时间：0.376377s][吞吐率：2.66req/s] [内存消耗：2,340.04kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index_copy',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/4G Language/zh_HK',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index_copy' => '',
+  'code' => '001nra9h1btLzr00qWbh1FhU8h1nra9P',
+  'state' => 'Rwm9wMBtT2UsM2GU',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\IndexCopy->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/IndexCopy.php ]
+[ info ] [ VIEW ] ./themes/index/index_copy/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `os_user` WHERE  `openid` = 'oai1t1QwdM_LCdZEq7QQX9bn4nEE' LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] INSERT INTO `os_user` (`openid` , `nickname` , `sex` , `city` , `province` , `country` , `headimgurl` , `accesstoken` , `tokentime` , `lasttime` , `create_time`) VALUES ('oai1t1QwdM_LCdZEq7QQX9bn4nEE' , '焱烯' , 2 , '' , '香港' , '中国' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/EuuZibEFSLNTgaCHrr6DKYjJ1wINYOF00yJJGs5ewL6wCUgHcUiaJYYP2c8LyKIOWATx01mSFy7mwjS3E2L08rnA/132' , '28_C6Hj6DtwHFVkRThkWeKeqUC7RHWzql2y3-PwdlJd4rRUhlbXCHhzCe4cxnpiI79N1fr1z3kNi39FUrqqx-2qxCJsgqHWK9-Mrudt1iAmOq4' , 1579445013 , 1576853013 , 1576853013) [ RunTime:0.000245s ]
+
+---------------------------------------------------------------
+[ 2019-12-20T22:44:31+08:00 ] 172.31.18.39 180.97.118.223 GET /index/index_copy
+[ log ] www.mangtuyou.com/index/index_copy [运行时间：0.020309s][吞吐率：49.24req/s] [内存消耗：2,234.02kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index_copy',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036906 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+)
+[ info ] [ PARAM ] array (
+  '/index/index_copy' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

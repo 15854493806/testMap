@@ -1,0 +1,26 @@
+[ 2020-02-17T15:06:31+08:00 ] 172.31.18.39 66.249.69.171 GET /zhoumo.png
+[ log ] www.mangtuyou.com/zhoumo.png [运行时间：0.012924s][吞吐率：77.37req/s] [内存消耗：1,202.10kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'zhoumo.png',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Googlebot-Image/1.0',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/zhoumo_png' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

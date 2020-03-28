@@ -1,0 +1,85 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/templet/index')}">模板管理</a></li>
+            <li class="layui-this">添加模板</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/templet/save')}" method="post" enctype="multipart/form-data">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">模板名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" value="{$user.username}" required lay-verify="required" placeholder="请输入模板名称" class="layui-input">
+                        </div>
+                    </div>
+                  	<div class="layui-form-item" >
+                        <label class="layui-form-label">视频</label>
+                        <div class="layui-input-block">
+                           <input type="file" name="video" value="">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">主图</label>
+                        <div class="layui-input-block">
+                            <button type="button" id="upload-photo-btn" class="layui-btn">上传图片</button>
+                            <div id="photo-container"></div>
+                        </div>
+                    </div>
+                   <div class="layui-form-item">
+                        <div class="layui-input-block">
+                          <input type="submit" class="layui-btn">
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
+{block name="js"}
+{/block}
+{block name="script"}
+<script>
+    $(function() {
+
+        form.on('select(typeSelect)', function(data){
+            if(data.value == 2){
+                $(".on").show();
+            }else{
+                $(".on").hide();
+            }
+        });
+
+        // 上传图片
+         var   uploadEditor = UE.getEditor('upload-photo-btn'),
+            photoListItem,
+            uploadImage;
+
+        uploadEditor.ready(function () {
+            uploadEditor.setDisabled();
+            uploadEditor.hide();
+            uploadEditor.addListener('beforeInsertImage', function (t, arg) {
+                $.each(arg, function (index, item) {
+                    photoListItem = '<div class="photo-list"><input type="text" name="img[]" value="' + item.src + '" class="layui-input layui-input-inline" style="display:none;"><img src="'+ item.src + '" style="height:200px;">';
+                    photoListItem += '<button type="button" class="layui-btn layui-btn-danger remove-photo-btn">移除</button></div>';
+
+                    $('#photo-container').append(photoListItem).on('click', '.remove-photo-btn', function () {
+                        $(this).parent('.photo-list').remove();
+                    });
+                });
+            });
+        });
+
+        $('#upload-photo-btn').on('click', function () {
+            uploadImage = uploadEditor.getDialog("insertimage");
+            uploadImage.open();
+        });
+
+    });
+</script>
+{/block}

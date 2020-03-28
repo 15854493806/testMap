@@ -1,0 +1,168 @@
+[ 2019-10-05T07:14:57+08:00 ] 172.31.18.39 47.101.200.71 GET /
+[ log ] admin.mangtuyou.com/ [运行时间：0.013225s][吞吐率：75.61req/s] [内存消耗：1,469.68kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'admin.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-10-05T07:14:57+08:00 ] 172.31.18.39 47.101.200.71 GET /admin/login/index.html
+[ log ] admin.mangtuyou.com/admin/login/index.html [运行时间：0.013320s][吞吐率：75.08req/s] [内存消耗：1,503.80kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'admin.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/admin.mangtuyou.com/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] ./themes/admin/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-10-05T17:41:46+08:00 ] 172.31.18.39 111.206.221.67 GET /index/spot/getScenic/cid/1/pid/1
+[ log ] admin.mangtuyou.com/index/spot/getScenic/cid/1/pid/1 [运行时间：0.024825s][吞吐率：40.28req/s] [内存消耗：2,425.93kb] [文件加载：57]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'spot',
+    2 => 'getScenic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://www.mangtuyou.com/',
+  'resource-type' => '13',
+  'x-devtools-emulate-network-conditions-client-id' => 'c1e26400-91bf-46d2-9f39-d608056a6c59',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'origin' => 'http://www.mangtuyou.com',
+  'proxy-connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)',
+  'host' => 'admin.mangtuyou.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '/index/spot/getScenic/cid/1/pid/1' => '',
+  'cid' => '1',
+  'pid' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Spot->getScenic[ /www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_nav` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT * FROM `os_nav` WHERE  `status` = 1 ORDER BY `sort`  ASC [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_example` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT `img`,`name`,`url` FROM `os_example` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_scenic` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT `id`,`coordinate_left`,`coordinate_top`,`name` FROM `os_scenic` WHERE  `cid` = 1  AND `classid` = 1 [ RunTime:0.000234s ]
+[ error ] [8]Use of undefined constant img - assumed 'img'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:21]
+[ error ] [8]Use of undefined constant id - assumed 'id'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_left - assumed 'coordinate_left'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant coordinate_top - assumed 'coordinate_top'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+[ error ] [8]Use of undefined constant name - assumed 'name'[/www/wwwroot/admin.mangtuyou.com/application/index/controller/Spot.php:25]
+
+---------------------------------------------------------------
+[ 2019-10-05T22:15:47+08:00 ] 172.31.18.39 111.7.100.26 GET /
+[ log ] admin.mangtuyou.com/ [运行时间：0.013179s][吞吐率：75.88req/s] [内存消耗：1,470.02kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'admin.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-10-05T22:15:47+08:00 ] 172.31.18.39 111.7.100.27 GET /admin/login/index.html
+[ log ] admin.mangtuyou.com/admin/login/index.html [运行时间：0.014093s][吞吐率：70.96req/s] [内存消耗：1,504.29kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/admin.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6v2jpftjdr4qfro78c562762r5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'admin.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/admin.mangtuyou.com/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] ./themes/admin/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

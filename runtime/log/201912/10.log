@@ -1,0 +1,65 @@
+[ 2019-12-10T09:15:53+08:00 ] 172.31.18.39 39.128.43.98 GET /index/index_copy
+[ log ] www.mangtuyou.com/index/index_copy [运行时间：0.020128s][吞吐率：49.68req/s] [内存消耗：2,234.16kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index_copy',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.8(0x17000820) NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index_copy' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-12-10T09:15:54+08:00 ] 172.31.18.39 39.128.43.98 GET /index/index_copy?code=011GJAwB0pIcNh267HtB0rzCwB0GJAwY&state=6A2DaRUiWl3lVPFu
+[ log ] www.mangtuyou.com/index/index_copy?code=011GJAwB0pIcNh267HtB0rzCwB0GJAwY&state=6A2DaRUiWl3lVPFu [运行时间：0.348494s][吞吐率：2.87req/s] [内存消耗：2,340.20kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index_copy',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.8(0x17000820) NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index_copy' => '',
+  'code' => '011GJAwB0pIcNh267HtB0rzCwB0GJAwY',
+  'state' => '6A2DaRUiWl3lVPFu',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\IndexCopy->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/IndexCopy.php ]
+[ info ] [ VIEW ] ./themes/index/index_copy/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `os_user` WHERE  `openid` = 'oai1t1bMkncLOH-BwmqFvrizeW0I' LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] INSERT INTO `os_user` (`openid` , `nickname` , `sex` , `city` , `province` , `country` , `headimgurl` , `accesstoken` , `tokentime` , `lasttime` , `create_time`) VALUES ('oai1t1bMkncLOH-BwmqFvrizeW0I' , '谭贻馨．XM国际纹饰微整教育培训' , 2 , '昆明' , '云南' , '中国' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/PPSnaC10Oq5M4fLCYbYLF22CJKd3m8ETibeyO2ywb0k7FgHicbTiaqYkNGwE6ialXR8hibFT7xhWWg5c8nRCcKwIcgw/132' , '28_eEjp7fh-w7r4oKh8329Tnz2ciEo7yYDCBTsJUlqzudfOjXYgzEfjQtSA5_m-p06TtSy1-BXGrA16nWfMISqJvwQmbJFvVph8v3IoyeZmL2E' , 1578532554 , 1575940554 , 1575940554) [ RunTime:0.000496s ]
+
+---------------------------------------------------------------

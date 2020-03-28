@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>城市</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            color: #000000;
+        }
+        header {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #cccccc;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+        }
+        header div {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        header p {
+            font-size: 18px;
+            text-align: center;
+        }
+        .list {
+            background: #F1F1F1;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+
+        .list .item {
+            display: flex;
+            justify-content: start;
+            padding: 8px;
+            background: #ffffff;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 10px;
+            cursor: pointer;
+            margin-top: 7px;
+            border-radius: 18px;
+            box-shadow: 2px 1px 5px #333333;
+        }
+        .list .item p {
+            margin-left: 10px;
+        }
+        .list .item .left {
+
+        }
+
+        .list .item .left img {
+            width: 70px;
+            height: 70px;
+            vertical-align: middle;
+        }
+        .list .item .content {
+
+        }
+        .list .item .content p{
+        }
+
+        .list .item .content .over{
+            /*display: none;*/
+
+        }
+        .list .item .content .over p {
+            margin-bottom: 7px;
+        }
+
+        .list .item .content .load{
+            display: none;
+
+        }
+        .list .item .content .load {
+            vertical-align: middle;
+        }
+        .list .item .content .load p{
+            margin-bottom: 5px;
+        }
+        .list .item .content .load span {
+            margin-right: 7px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .list .item .content .load input{
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+        }
+        .list .item .right p{
+            margin-bottom: 7px;
+        }
+        .list .item .right .save {
+            display: none;
+        }
+        .list .item .right img {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <header>
+        <img src="/public/image/back.png" alt="" onclick="back()">
+        <div>
+            <p>城市</p>
+        </div>
+    </header>
+    <div class="list">
+    </div>
+
+</div>
+</body>
+
+</html>
+<script src="/public/js/jquery.min.js"></script>
+
+<script>
+    var list = $('.list');
+    var cityData = [];
+    // 初始化
+    $(function () {
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: 'http://www.mangtuyou.com/index/index/getcity',
+            data: {},
+            success: function (data) {
+                console.log("data",data);
+                cityData = data.data;
+                data.data.forEach((v,i,arr) =>　{
+                    list.append(` <div class="item" onclick="goToCityInfo(${i})">
+            <p>${v.city}</p>
+        </div>`)
+                })
+            },
+            error:function (err) {
+                console.log("这是请求失败的");
+            }
+        });
+    })
+
+    // 返回上一页
+    function back() {
+        window.history.back();
+    }
+
+//    进入该城市的详情
+    function goToCityInfo(index) {
+        console.log(cityData[index].city)
+    //        cityData[index].city
+            window.location.href = 'index.html#city=' + cityData[index].city;
+
+    }
+
+</script>

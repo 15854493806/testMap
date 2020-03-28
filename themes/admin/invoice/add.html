@@ -1,0 +1,70 @@
+{extend name="base" /}
+{block name="body"}
+<script src="/public/static/js/laydate/laydate.js"></script>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/invoice/index')}">发票管理</a></li>
+            <li class="layui-this">添加发票</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/invoice/save')}" method="post" enctype="multipart/form-data">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">单位名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" value="" required lay-verify="required" placeholder="请输入单位名称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">纳税识别号</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="identify" value="" required lay-verify="required" placeholder="请输入纳税人识别号" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">注册地址</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="site" value="" required lay-verify="required" placeholder="请输入注册地址" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">注册电话</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="phone" value="" required lay-verify="required" placeholder="请输入注册电话" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">开户银行</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="bank" value="" required lay-verify="required" placeholder="请输入开户银行" class="layui-input">
+                        </div>
+                    </div>
+                    
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">银行账户</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="number" value="" required lay-verify="required" placeholder="请输入银行账户" class="layui-input">
+                        </div>
+                    </div>
+                   
+                   <div class="layui-form-item">
+                      <label class="layui-form-label">审核状态</label>
+                      <div class="layui-input-block">
+                        <input type="radio" name="status" value="1" title="通过" checked=""><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon layui-anim-scaleSpring"></i><div></div></div>
+                        <input type="radio" name="status" value="0" title="未通过"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div></div></div>
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <input type="submit" class="layui-btn">
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

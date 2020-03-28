@@ -1,0 +1,2519 @@
+[ 2020-01-23T05:23:56+08:00 ] 172.31.18.39 106.11.156.249 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.028817s][吞吐率：34.70req/s] [内存消耗：2,407.11kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'YisouSpider',
+  'connection' => 'Keep-Alive',
+  'thumbwidth' => '512',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'zh-cn,en-us,zh-tw,en-gb,en;',
+  'totaltimeout' => '12000',
+  'thumbquality' => '60',
+  'thumbhight' => '512',
+  'accept' => '*/*',
+  'screenwidth' => '1200',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+  0 => 'markList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000503s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.002539s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000432s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T12:48:01+08:00 ] 172.31.18.39 101.132.156.13 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.027088s][吞吐率：36.92req/s] [内存消耗：2,406.41kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+  0 => 'markList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000481s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000398s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T14:20:18+08:00 ] 172.31.18.39 221.2.83.190 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.026069s][吞吐率：38.36req/s] [内存消耗：2,406.79kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+  0 => 'markList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000336s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T14:20:20+08:00 ] 172.31.18.39 221.2.83.190 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.013842s][吞吐率：72.24req/s] [内存消耗：1,202.27kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.mangtuyou.com/',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-01-23T14:28:01+08:00 ] 172.31.18.39 121.28.85.226 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.023553s][吞吐率：42.46req/s] [内存消耗：2,406.55kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'www.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+  0 => 'markList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T14:30:22+08:00 ] 172.31.18.39 120.0.8.137 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.026661s][吞吐率：37.51req/s] [内存消耗：2,406.55kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'www.mangtuyou.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+  0 => 'markList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000443s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000327s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T15:46:35+08:00 ] 172.31.18.39 221.2.83.190 GET /index/index/getCity
+[ log ] www.mangtuyou.com/index/index/getCity [运行时间：0.023679s][吞吐率：42.23req/s] [内存消耗：2,329.20kb] [文件加载：54]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getCity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+  'cookie' => 'BT_PANEL=1e2c0d6bd860b1d50e80a891d18f1868e19e5d64; serverType=apache; order=id%20desc; conterError=; memRealUsed=806; mem-before=806/3789%20%28MB%29; memSize=3789; fifteen=0.05; one=0; five=0.01; upNet=0.24; downNet=0.24',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getCity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-01-23T15:46:55+08:00 ] 172.31.18.39 221.2.83.190 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.024676s][吞吐率：40.53req/s] [内存消耗：2,329.33kb] [文件加载：54]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=1e2c0d6bd860b1d50e80a891d18f1868e19e5d64; serverType=apache; order=id%20desc; conterError=; memRealUsed=806; mem-before=806/3789%20%28MB%29; memSize=3789; fifteen=0.05; one=0; five=0.01; upNet=0.31; downNet=0.33',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-01-23T15:56:04+08:00 ] 172.31.18.39 221.2.83.190 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.013306s][吞吐率：75.15req/s] [内存消耗：1,202.15kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-01-23T15:56:22+08:00 ] 172.31.18.39 42.236.10.114 GET /
+[ log ] www.mangtuyou.com/ [运行时间：0.027033s][吞吐率：36.99req/s] [内存消耗：2,407.41kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://baidu.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+  0 => 'markList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001504s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000273s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:01:30+08:00 ] 172.31.18.39 221.2.83.190 GET /index/index//getcity
+[ log ] www.mangtuyou.com/index/index//getcity [运行时间：0.023644s][吞吐率：42.29req/s] [内存消耗：2,351.02kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'serverType=apache; uploadSize=1073741824; rank=a; order=id%20desc; Path=/www/wwwroot/www.mangtuyou.com/application/index/controller; BT_PANEL=084a5559a6da64b67c8d24dbe241cfdee60d1e15',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000932s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000881s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:01:30+08:00 ] 172.31.18.39 221.2.83.190 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.013375s][吞吐率：74.77req/s] [内存消耗：1,202.49kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'serverType=apache; uploadSize=1073741824; rank=a; order=id%20desc; Path=/www/wwwroot/www.mangtuyou.com/application/index/controller; BT_PANEL=084a5559a6da64b67c8d24dbe241cfdee60d1e15',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'referer' => 'http://www.mangtuyou.com/index/index//getcity',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-01-23T16:01:35+08:00 ] 172.31.18.39 180.163.220.67 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.021177s][吞吐率：47.22req/s] [内存消耗：2,350.82kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000290s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:01:36+08:00 ] 172.31.18.39 180.163.220.5 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.024480s][吞吐率：40.85req/s] [内存消耗：2,351.36kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://baidu.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000366s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000212s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:03:31+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.025706s][吞吐率：38.90req/s] [内存消耗：2,350.73kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000351s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:03:31+08:00 ] 172.31.18.39 112.244.176.117 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.013260s][吞吐率：75.42req/s] [内存消耗：1,202.27kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mangtuyou.com/index/index/getcity',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-01-23T16:09:14+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.023623s][吞吐率：42.33req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000254s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:10:00+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.023299s][吞吐率：42.92req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000331s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:10:14+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.024212s][吞吐率：41.30req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000429s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:13:03+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.023585s][吞吐率：42.40req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000453s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001364s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000278s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:13:09+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.025550s][吞吐率：39.14req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000335s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.002358s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000265s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:13:28+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.024709s][吞吐率：40.47req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000336s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000253s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:13:39+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.023880s][吞吐率：41.88req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:14:19+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.022210s][吞吐率：45.03req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000495s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:14:34+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.023158s][吞吐率：43.18req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000348s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000315s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:14:37+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.022361s][吞吐率：44.72req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000173s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:19:32+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.021216s][吞吐率：47.13req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000315s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000390s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:19:38+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.029266s][吞吐率：34.17req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000450s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000207s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T16:19:46+08:00 ] 172.31.18.39 112.244.176.117 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.023966s][吞吐率：41.73req/s] [内存消耗：2,350.87kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:63342/wxMap/src/view/drive.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36',
+  'origin' => 'http://localhost:63342',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T21:10:16+08:00 ] 172.31.18.39 112.224.65.37 GET /index/index/getcity
+[ log ] www.mangtuyou.com/index/index/getcity [运行时间：0.025054s][吞吐率：39.91req/s] [内存消耗：2,351.01kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'com.tencent.mm',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; HUAWEI GRA-UL10 Build/HUAWEIGRA-UL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045112 Mobile Safari/537.36 MMWEBID/8477 MicroMessenger/7.0.3.1400(0x2700033C) Process/tools NetType/4G Language/zh_CN',
+  'origin' => 'https://15854493806.github.io',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getcity' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getCity[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city` FROM `os_newscenic` ORDER BY city desc [ RunTime:0.000389s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T22:13:06+08:00 ] 172.31.18.39 221.2.83.222 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.013151s][吞吐率：76.04req/s] [内存消耗：1,202.24kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-01-23T23:02:08+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.018832s][吞吐率：53.10req/s] [内存消耗：1,204.98kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF), expecting variable (T_VARIABLE)[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:62]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:02:08+08:00 ] 172.31.18.39 221.2.83.222 GET /favicon.ico
+[ log ] www.mangtuyou.com/favicon.ico [运行时间：0.014048s][吞吐率：71.19req/s] [内存消耗：1,202.62kb] [文件加载：38]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mangtuyou.com/index/index/getMarks',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2020-01-23T23:02:10+08:00 ] 172.31.18.39 42.236.10.125 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.013975s][吞吐率：71.56req/s] [内存消耗：1,205.33kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://baidu.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF), expecting variable (T_VARIABLE)[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:62]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:02:14+08:00 ] 172.31.18.39 42.236.10.125 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.012735s][吞吐率：78.52req/s] [内存消耗：1,204.79kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF), expecting variable (T_VARIABLE)[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:62]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:02:14+08:00 ] 172.31.18.39 42.236.10.125 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014018s][吞吐率：71.34req/s] [内存消耗：1,205.33kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://baidu.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF), expecting variable (T_VARIABLE)[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:62]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:04+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014368s][吞吐率：69.60req/s] [内存消耗：1,205.30kb] [文件加载：39]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF)[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:72]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:17+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.013982s][吞吐率：71.52req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:18+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014197s][吞吐率：70.44req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:18+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014382s][吞吐率：69.53req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:18+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.013662s][吞吐率：73.20req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:18+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.013808s][吞吐率：72.42req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:18+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.013716s][吞吐率：72.91req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:19+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014405s][吞吐率：69.42req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:19+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.013244s][吞吐率：75.51req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:19+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014856s][吞吐率：67.31req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:19+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014980s][吞吐率：66.76req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:19+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014667s][吞吐率：68.18req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:03:19+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014341s][吞吐率：69.73req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getMarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:03+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014291s][吞吐率：69.97req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:04+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014539s][吞吐率：68.78req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:04+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014011s][吞吐率：71.37req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:04+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014162s][吞吐率：70.61req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:04+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014490s][吞吐率：69.01req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:05+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.016067s][吞吐率：62.24req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:05+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014126s][吞吐率：70.79req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:05+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.014134s][吞吐率：70.75req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:05+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getMarks
+[ log ] www.mangtuyou.com/index/index/getMarks [运行时间：0.013167s][吞吐率：75.95req/s] [内存消耗：1,267.21kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMarks',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getMarks' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:16+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/index
+[ log ] www.mangtuyou.com/index/index/index [运行时间：0.013941s][吞吐率：71.73req/s] [内存消耗：1,266.84kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Index::getmarks()[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:33]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:39+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/index
+[ log ] www.mangtuyou.com/index/index/index [运行时间：0.027574s][吞吐率：36.27req/s] [内存消耗：2,426.84kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ./themes/index/index/index.html [ array (
+  0 => 'markList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_newscenic` [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT * FROM `os_newscenic` [ RunTime:0.000533s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:04:46+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.024111s][吞吐率：41.47req/s] [内存消耗：2,355.04kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [0]致命错误: Class 'app\index\controller\UserModel' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:35]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:05+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.028082s][吞吐率：35.61req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000658s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:06+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.026675s][吞吐率：37.49req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:07+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.034479s][吞吐率：29.00req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000308s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:07+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.027332s][吞吐率：36.59req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000356s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:07+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.027252s][吞吐率：36.69req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000372s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:07+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.026953s][吞吐率：37.10req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000468s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000289s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:07+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.027881s][吞吐率：35.87req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000411s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:07+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.026136s][吞吐率：38.26req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000298s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:08+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.027959s][吞吐率：35.77req/s] [内存消耗：2,418.33kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000477s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:35+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.029295s][吞吐率：34.14req/s] [内存消耗：2,418.22kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000384s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:35+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.026868s][吞吐率：37.22req/s] [内存消耗：2,418.22kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000478s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000337s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:36+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.027593s][吞吐率：36.24req/s] [内存消耗：2,418.22kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000338s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:36+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.027973s][吞吐率：35.75req/s] [内存消耗：2,418.22kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000345s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000328s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:36+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.026447s][吞吐率：37.81req/s] [内存消耗：2,418.22kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000549s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000305s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:37+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.026518s][吞吐率：37.71req/s] [内存消耗：2,418.22kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000341s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:05:45+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.027388s][吞吐率：36.51req/s] [内存消耗：2,418.22kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [0]致命错误: Class 'app\common\model\CollectionUser' not found[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000526s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.001347s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000347s ]
+
+---------------------------------------------------------------
+[ 2020-01-23T23:06:07+08:00 ] 172.31.18.39 221.2.83.222 GET /index/index/getmark
+[ log ] www.mangtuyou.com/index/index/getmark [运行时间：0.026561s][吞吐率：37.65req/s] [内存消耗：2,433.27kb] [文件加载：56]
+[ info ] [ LANG ] /www/wwwroot/www.mangtuyou.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getmark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; BT_PANEL=39680c29a808cdf78cdb0c0dc7e6f96d3c24215c; serverType=apache; order=id%20desc; backup_path=/www/backup; uploadSize=1073741824; rank=a; Path=/www/wwwroot/www.mangtuyou.com/application/common/model',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mangtuyou.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/getmark' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->getmark[ /www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$openID[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:34]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/www.mangtuyou.com/application/index/controller/Index.php:36]
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mangtoo.os_collection_user' doesn't exist[/www/wwwroot/www.mangtuyou.com/thinkphp/library/think/db/connector/Mysql.php:65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000371s ] mysql:dbname=mangtoo;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `os_user` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `os_user` WHERE  `openid` = null LIMIT 1 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,48 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">广告管理</li>
+            <li class=""><a href="{:url('admin/activities/add')}">添加广告</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                        <th>图片</th>
+                        <th>是否企业可查</th>
+                        <th>是否屏蔽</th>
+                        <th>跳转链接</th>
+                        <th>富文本</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="ActivitiesList" item="ActivitiesItem"}
+                    <tr>
+                        <td>{$ActivitiesItem.id}</td>
+                        <td><img src="{$ActivitiesItem.img}" alt=""  width="50px;" height="30px;" /></td>
+                        <td>{$ActivitiesItem.enterprisescheck}</td>
+                        <td>{$ActivitiesItem.status}</td>
+                        <td>{$ActivitiesItem.link}</td>
+                        <td>{$ActivitiesItem.text}</td>
+                        <td>{:date('Y-m-d H:i:s',$ActivitiesItem.create_time)}</td>
+                        <td>
+                            <a href="{:url('admin/user/edit',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">编辑</a>
+                            <a href="{:url('admin/user/delete',['id'=>$vo['id']])}" class="layui-btn layui-btn-danger layui-btn-mini ajax-delete">删除</a>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页-->
+                {$ActivitiesList->render()}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:2:{i:0;a:9:{s:2:"id";i:6;s:3:"cid";i:1;s:4:"name";s:7:"海报2";s:11:"description";s:0:"";s:4:"link";s:0:"";s:6:"target";s:5:"_self";s:5:"image";s:61:"/public/uploads/20190304/4cb5f65a2d53a1c20c3e14c7c4087f1e.jpg";s:6:"status";i:1;s:4:"sort";i:2;}i:1;a:9:{s:2:"id";i:2;s:3:"cid";i:1;s:4:"name";s:12:"首页轮播";s:11:"description";s:12:"首页轮播";s:4:"link";s:22:"https://www.baidu.com/";s:6:"target";s:5:"_self";s:5:"image";s:61:"/public/uploads/20190304/97bb6cfa7cf250bbc33e9731df4a4345.jpg";s:6:"status";i:1;s:4:"sort";i:1;}}
+?>

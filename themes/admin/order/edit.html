@@ -1,0 +1,45 @@
+{extend name="base" /}
+{block name="body"}
+<script src="/public/static/js/laydate/laydate.js"></script>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/order/index')}">订单管理</a></li>
+            <li class="layui-this">发货</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/order/fahuo')}" method="post">
+				<input name="id" value="{$id}" style="display:none;">
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">快递公司</label>
+                    <div class="layui-input-block">
+                      <select name="express" lay-filter="aihao">
+					  <option value="">请选择快递公司</option>
+                        {foreach name="express" item='vo'}
+                        <option value="{$vo.id}">{$vo.express}</option>
+                        {/foreach}
+                      </select>
+                    </div>
+                  </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">快递单号</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="expressnum" value="{$data.name}"  placeholder="请输入快递单号" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                              
+                              <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                              <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/block}

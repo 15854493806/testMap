@@ -1,0 +1,65 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">模板管理</li>
+            <li class=""><a href="{:url('admin/templet/add')}">添加模板</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+
+                <form class="layui-form layui-form-pane" action="{:url('admin/templet/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="{$keyword}" placeholder="请输入关键词" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">搜索</button>
+                    </div>
+                </form>
+                <hr>
+
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                        <th>模板名称</th>
+                        <th>模板视频</th>
+                     	<th>模板图片</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="data" item="vo"}
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.name}</td>
+                        <td>
+                        	{if condition="$vo.video"}
+                          		<a href = "{$vo.video}" target="_blank">点击查看视频</a>
+                          	{/if}
+                      	</td>
+                        <td>
+                          {foreach name="$vo.img" item="img"}
+                      			<img src = "{$img}" width="50px">
+                      	  {/foreach}
+                      	</td>
+                        <td>
+                            <!-- <a href="{:url('admin/templet/edit',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">编辑</a> -->
+                            <a href="{:url('admin/templet/delete',['id'=>$vo['id']])}" class="layui-btn layui-btn-danger layui-btn-mini ajax-delete">删除</a>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页-->
+                {$data->render()}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

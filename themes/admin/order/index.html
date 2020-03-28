@@ -1,0 +1,97 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">订单管理</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+
+                <form class="layui-form layui-form-pane" action="{:url('admin/order/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="" placeholder="按订单号查询" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">搜索</button>
+                    </div>
+                </form>
+                <hr>
+				
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th>订单号</th>
+                        <th>购买人</th>
+                        <th>购买商品</th>
+                        <th>金额</th>
+						<th>收货人</th>
+						<th>联系方式</th>
+						<th>收货地址</th>
+						<th>下单时间</th>
+                        <th>订单状态</th>
+						<th>支付方式</th>
+						<th>支付时间</th>
+						<th>物流信息</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {volist  name='data' id='vo'}
+                    <tr>
+                        <td>{$vo.orderid}</td>
+                        <td>{$vo.user}</td>
+						<td>
+							{volist name='vo.good' id='good'}
+								{$good}<br><br>
+							{/volist}
+						</td>
+                        <td>{$vo.money}</td>
+						<td>{$vo.uid}</td>
+						<td>{$vo.phone}</td>
+                        <td>{$vo.aid}</td>
+                        <td>{:date('Y-m-d H:i:s',$vo.paytime)}</td>
+                        <td>
+							{if condition="$vo.status eq 1"}未付款{/if}
+							{if condition="$vo.status eq 2 && $vo.tuikuan eq 0"}待发货{/if}
+							{if condition="$vo.status eq 3 && $vo.tuikuan eq 0"}待收货{/if}
+							{if condition="$vo.status eq 4 && $vo.tuikuan eq 0"}已收货{/if}
+							{if condition="$vo.status eq 5"}已取消{/if}
+							{if condition="$vo.tuikuan eq 1"}申请退款{/if}
+							{if condition="$vo.tuikuan eq 2"}已退款{/if}
+						</td>
+                        <td>
+							{if condition="$vo.payway eq 1"}微信支付{/if}
+							{if condition="$vo.payway eq 2"}支付宝{/if}
+							{if condition="$vo.payway eq 3"}银联支付{/if}
+						</td>
+                        <td>{if condition="$vo.paytimes neq 0"}{:date('Y-m-d H:i:s',$vo.paytimes)}{/if}</td>
+                        <td>{if condition="$vo.express neq 0"}{$vo.kuaidi}<br>{$vo.expressnum}{/if}</td>
+                        <td>
+							{if condition="$vo.tuikuan eq 1"}
+								<a href="{:url('admin/order/tuikuan',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">同意退款</a>
+								<a href="{:url('admin/order/jujue',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">拒绝退款</a>
+							{/if}
+							{if condition="$vo.status eq 2"}
+								<a href="{:url('admin/order/edit',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">发货</a>
+							{/if}
+							{if condition="$vo.status eq 3"}
+								<a href="{:url('admin/order/editfahuo',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">修改快递信息</a>
+							{/if}
+                        </td>
+                    </tr>
+					{/volist}
+              
+                    </tbody>
+                </table>
+                <!--分页-->
+				{$data->render()}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

@@ -1,0 +1,47 @@
+{extend name="base" /}
+{block name="body"}
+<script src="/public/static/js/laydate/laydate.js"></script>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/answer/index')}">问题管理</a></li>
+            <li class=""><a href="{:url('admin/answer/add')}">添加问题</a></li>
+            <li class="layui-this">编辑问题</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/answer/update')}" method="post" enctype="multipart/form-data">
+                    <div class="layui-form-item">
+                        <input type="hidden" name="id" value="{$data.id}">
+                        <label class="layui-form-label">问题</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" value="{$data.title}" required lay-verify="required" placeholder="请输入常见问题" class="layui-input">
+                        </div>
+                    </div>
+					<div class="layui-form-item">
+                        <input type="hidden" name="id" value="{$data.id}">
+                        <label class="layui-form-label">解答</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="content" value="{$data.content}" required lay-verify="required" placeholder="请输入解答内容" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  laydate.render({
+    elem: '#test1' //指定元素
+  });
+</script>
+
+{/block}

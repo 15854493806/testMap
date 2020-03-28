@@ -1,0 +1,53 @@
+{extend name="base" /}
+{block name="body"}
+<script src="/public/static/js/laydate/laydate.js"></script>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/brand/index')}">品牌管理</a></li>
+            <li class=""><a href="{:url('admin/brand/add')}">添加品牌</a></li>
+            <li class="layui-this">编辑品牌</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/brand/update')}" method="post" enctype="multipart/form-data">
+                    <div class="layui-form-item">
+                        <input type="hidden" name="id" value="{$data.id}">
+                        <label class="layui-form-label">品牌名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" value="{$data.name}" required lay-verify="required" placeholder="请输入品牌名称" class="layui-input">
+                        </div>
+                    </div>
+
+                   <div class="layui-form-item">
+
+                        <label class="layui-form-label">品牌图标</label>
+
+                        <div class="layui-input-block">
+
+                            <input type="text" name="img" value="{$data.img}" class="layui-input layui-input-inline" id="thumb">
+
+                            <input type="file" name="file" class="layui-upload-file">
+                        </div>
+                        <img src="{$data.img}" id ="thumb1">
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  laydate.render({
+    elem: '#test1' //指定元素
+  });
+</script>
+
+{/block}

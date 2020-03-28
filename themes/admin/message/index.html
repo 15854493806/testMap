@@ -1,0 +1,70 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">资讯管理</li>
+            <li><a href="{:url('admin/message/add')}">添加资讯</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+
+                <form class="layui-form layui-form-pane" action="{:url('admin/message/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="" placeholder="请输入关键词" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">搜索</button>
+                    </div>
+                </form>
+                <hr>
+
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                        <th>资讯标题</th>
+                        <th>资讯内容</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="data" item='ov'}
+                    <tr>
+                        <td>{$ov.id}</td>
+                        <td>{$ov.title}</td>
+                        <td onclick="fun('{$ov.content}')">点击查看资讯详情</td>
+                        <td>
+                          
+                            <a href="{:url('admin/message/edit',['id'=>$ov['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">编辑</a>
+                            <a href="{:url('admin/message/delete',['id'=>$ov['id']])}" class="layui-btn layui-btn-danger layui-btn-mini ajax-delete">删除</a>
+                        </td>
+                    </tr>
+                {/foreach}
+                    </tbody>
+                </table>
+                <!--分页-->
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+//资讯内容弹窗
+    function fun($details)
+    {
+        layer.open({
+          type: 1,
+          title:'资讯详情',
+          skin: '', //加上边框
+          area: ['100%', '100%'], //宽高
+          content: $details
+        });
+    }
+</script>
+{/block}

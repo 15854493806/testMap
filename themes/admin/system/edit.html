@@ -1,0 +1,46 @@
+{extend name="base" /}
+{block name="body"}
+<script src="/public/static/js/laydate/laydate.js"></script>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/system/index')}">商品分类</a></li>
+            <li class="layui-this">编辑分类</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/system/update')}" method="post" enctype="multipart/form-data">
+                    {foreach name="SystemEdit" item="vo"}
+                    <div class="layui-form-item">
+                        <input type="hidden" name="id" value="{$vo.id}">
+                        <label class="layui-form-label">{$vo.body}</label>
+                        <div class="layui-input-block">
+                            {if condition="$vo.id==5"}
+                                    <input type="radio" name="sex" value="1" title="开" {if condition="$vo.states==1"}checked{/if}>
+                                    <input type="radio" name="sex" value="0" title="关" {if condition="$vo.states==0"}checked{/if}>
+                            {else/}
+                                <input type="text" name="values" value="{$vo.values}" required lay-verify="required" placeholder="" class="layui-input">
+                            {/if}
+                        </div>
+                    </div>
+                    {/foreach}
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    laydate.render({
+        elem: '#test1' //指定元素
+    });
+</script>
+
+{/block}

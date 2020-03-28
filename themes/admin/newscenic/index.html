@@ -1,0 +1,87 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">景区管理</li>
+            <li class=""><a href="{:url('admin/newscenic/add')}">添加景区</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+
+                <form class="layui-form layui-form-pane" action="{:url('admin/newscenic/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="{$keyword}" placeholder="按景区名称搜索" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">搜索</button>
+                    </div>
+                </form>
+                <hr>
+                 <table class="layui-table">
+                    <thead>
+                    <tr>
+                      	<th>景区ID</th>
+                        <th>所属地区</th>
+                        <th>景区名称</th>
+                      	<th>点击量</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name='data' item='vo'}
+                    <tr>
+                      	<td>{$vo.id}</td>
+                        <td>{$vo.city}</td>
+                        <td>{$vo.name_cn}</td>
+                      	<td>{$vo.Hits}</td>
+                        <td>
+                            <a href="{:url('admin/newscenic/edit',['id'=>$vo['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">编辑</a>
+                            <a href="{:url('admin/newscenic/delete',['id'=>$vo['id']])}" class="layui-btn layui-btn-danger layui-btn-mini ajax-delete">删除</a>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+              
+                </table>
+                <!--分页-->
+              {$data->render()}
+              
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //商品详情弹窗
+    function link($details)
+    {
+        layer.open({
+          type: 1,
+          title:'商品详情',
+          skin: '', //加上边框
+          area: ['100%', '100%'], //宽高
+          content: $details
+        });
+    }
+    //商品主图弹窗
+    function img($img)
+    {
+        var  array = $img.split(',');
+        str=''
+        for (var i = 0; i < array.length; i++) {
+            str += '<img src="'+array[i]+'">';
+          }
+        layer.open({
+          type: 1,
+          title:'商品主图',
+          skin: '', //加上边框
+          area: ['100%', '100%'], //宽高
+          content:str,
+        });
+    }
+</script>
+{/block}
